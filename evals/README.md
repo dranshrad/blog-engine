@@ -25,6 +25,10 @@ is *honest* — only whether one exists and whether obviously-invented shapes
 
 A case can pass mechanically and still be a bad answer. Read it.
 
+## Running the full suite
+
+**[PROTOCOL.md](PROTOCOL.md)** — the 30-minute procedure: why these seven, the fresh-session rule, how to read a result, and what to do when one fails. Start there.
+
 ## Running one
 
 ```bash
