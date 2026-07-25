@@ -41,6 +41,17 @@ After renaming from Clearcast, remove stale `~/.claude/skills/clearcast` and `~/
 4. Submit sitemap: `https://dranshrad.github.io/groundledger/sitemap.xml`
 5. Optional: Bing Webmaster Tools with the same sitemap (helps Copilot surfaces)
 
+## Mirror repo About (blog-engine)
+
+If the [blog-engine](https://github.com/dranshrad/blog-engine) GitHub description still mentions Clearcast, refresh auth and run:
+
+```bash
+gh auth refresh -h github.com
+gh repo edit dranshrad/blog-engine \
+  --description "Superseded by Groundledger (https://github.com/dranshrad/groundledger) — mirror of the MIT agent-skill suite for Claude Code, Cursor & Cowork" \
+  --homepage "https://dranshrad.github.io/groundledger/"
+```
+
 ## Suggested launch title (external post)
 
 > Groundledger: Claude Code & Cursor agent skills for grounded blog SEO, AEO, and observe-only paid media
