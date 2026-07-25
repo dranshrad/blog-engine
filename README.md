@@ -1,59 +1,70 @@
-# Clearcast
+# Clearcast — Cursor Agent Skills for Blog SEO, AEO, Social Content & Discovery
 
-**Original Cursor skill suite for long-form publishing, editorial refinement, social casting, and multi-surface discovery.**
+<p align="center">
+  <img src="docs/assets/og-cover.svg" alt="Clearcast: CLEAR SPARK ORBIT SNAP Cursor skills for blog SEO AEO social and discovery" width="100%">
+</p>
 
-MIT License © 2026 Divyansh Gupta
+**Clearcast** is an open-source (MIT) suite of [Cursor](https://cursor.com) Agent Skills for publish-ready blogging, multi-pass editing, platform-native social posts, and multi-surface content strategy (search, AI answers, community, profiles).
 
-Clearcast is **not** a fork or mash-up of third-party Claude plugin trees. It was designed as one coherent system after studying the content landscape (blog engines, editorial pipelines, social skill packs, and multi-surface SEO knowledge bases) and then writing new frameworks, names, artifacts, and workflows from scratch.
+> Docs site: [dranshrad.github.io/clearcast](https://dranshrad.github.io/clearcast/) · Canonical repo: [github.com/dranshrad/clearcast](https://github.com/dranshrad/clearcast)
 
-## Skills
+Updated: 2026-07-25
+
+## Why Clearcast?
+
+Teams need content that (1) helps a human finish a job, (2) is extractable for AI answers (AEO/GEO readiness), and (3) casts into social without inventing stats. Clearcast ships original frameworks — **CLEAR**, **SPARK**, **ORBIT**, **SNAP/PULSE** — plus Studio Desk ops and a Cue Deck of prompt cards.
+
+It is **not** a fork of third-party Claude Code blog/social plugins. See [NOTICE](NOTICE) and [docs/COVERAGE.md](docs/COVERAGE.md).
+
+## Skills at a glance
 
 | Skill | Framework | Use for |
 |-------|-----------|---------|
-| [`clearcast`](skills/clearcast/) | Router | Pick the right skill / compose a pipeline |
-| [`blog-engine`](skills/blog-engine/) | **CLEAR** | Articles with claim ledgers, Q-tests, YMYL gates |
-| [`editorial-pass`](skills/editorial-pass/) | **SPARK** | Multi-pass polish with numbered intermediates |
-| [`social-cast`](skills/social-cast/) | **SNAP + PULSE** | Hooks, posts, threads, atomize, calendars |
-| [`orbit-discovery`](skills/orbit-discovery/) | **ORBIT** | Surface choice, clusters, dual scorecards |
+| [clearcast](skills/clearcast/) | Router | Pick / compose skills |
+| [blog-engine](skills/blog-engine/) | **CLEAR** | Articles, Ship Scan, Cite Surface, Freshness Drift, Locale Lattice |
+| [editorial-pass](skills/editorial-pass/) | **SPARK** | Multi-pass polish, Tone Retarget, Voice Canon |
+| [social-cast](skills/social-cast/) | **SNAP + PULSE** | Hooks, posts, atomize, calendars, Growth Action Stack |
+| [orbit-discovery](skills/orbit-discovery/) | **ORBIT** | Surface bets, Echo Map, Close Path, Path Cards |
+| [studio-desk](skills/studio-desk/) | Ops | Workspace Boot, versions, Export Pack, Ship Gate |
+| [cue-deck](skills/cue-deck/) | Prompts | Reusable ORBIT/CLEAR cue cards |
 
-### Unique suite features
-
-- Claim ledger + adversarial Q-test + residual risk (blog)
-- SPARK inspectable intermediates + voice lock + fact freeze (editorial)
-- SNAP hooks + atomize cast packs + PULSE cadence (social)
-- ORBIT loop + dual buyer/machine scorecard + intent-pure clusters (discovery)
-- Optional project files: `VOICE.md`, `BRAND.md`, `CAST.md`, `ORBIT.md`
-
-## Install
+## Install (Cursor)
 
 ```bash
 git clone https://github.com/dranshrad/clearcast.git
+mkdir -p ~/.cursor/skills
 cp -R clearcast/skills/* ~/.cursor/skills/
 ```
 
-Or copy only the skills you need into `.cursor/skills/` inside a project.
+Project-local: copy into `.cursor/skills/` instead. Details: [INSTALL.md](INSTALL.md) · [Getting started](docs/getting-started.md).
 
 ## Typical pipelines
 
-**Flagship article → social week**
-1. `orbit-discovery` `diagnose` / `brief`
-2. `blog-engine` `draft` → stress tests
-3. `editorial-pass` full SPARK (optional)
-4. `social-cast` `atomize` → `calendar`
+1. **Strategy → article → social**  
+   `orbit-discovery` triage → `blog-engine` draft → `editorial-pass` SPARK → `social-cast` atomize → `studio-desk` ship
+2. **SEO audit** — `blog-engine` ship-scan + cite-surface  
+3. **Voice guide** — `editorial-pass` specimens → mine → canon  
+4. **Prompt** — `cue-deck` draw `C-draft`
 
-**Polish only**
-1. `editorial-pass` with voice lock
-2. Optional `blog-engine` `score`
+## Related public repositories
 
-**Social-only**
-1. `social-cast` `context` → `hook` / `post` / `thread`
+| Project | Link |
+|---------|------|
+| Voice notes → Artifacts | [voice-notes-to-anthropic-artifacts](https://github.com/dranshrad/voice-notes-to-anthropic-artifacts) |
+| LibCST LLM refactorer | [llm-cst-refactorer](https://github.com/dranshrad/llm-cst-refactorer) |
+| Self-correction loop | [automated-self-correction-loop](https://github.com/dranshrad/automated-self-correction-loop) |
+| Anthropic audio gateway | [anthropic-audio-gateway](https://github.com/dranshrad/anthropic-audio-gateway) |
 
-## Provenance
+Full pairing notes: [docs/ECOSYSTEM.md](docs/ECOSYSTEM.md).
 
-See [NOTICE](NOTICE) for non-affiliation and how this suite differs from materials reviewed during design.
+## FAQ
 
-Generic practices (cite sources, use headings, match platform norms) are industry craft. Named frameworks here (CLEAR, SPARK, SNAP, PULSE, ORBIT) and their artifacts are original to this repository.
+**Does this guarantee rankings or AI citations?** No — it raises editorial and extractability readiness.  
+**Google SEO / AEO?** Ship Scan, Cite Surface, ORBIT surface bets, and claim discipline target search + answer engines as one craft.  
+**Copyright?** Original Clearcast expression under MIT; see NOTICE.
+
+More: [docs/faq.md](docs/faq.md).
 
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE) © 2026 Divyansh Gupta

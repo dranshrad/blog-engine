@@ -1,100 +1,107 @@
 ---
 name: orbit-discovery
 description: >-
-  Clearcast multi-surface discovery skill using the ORBIT loop: Observe demand,
-  Reinforce off-site proof, Build owned assets, Instrument outcomes, Transmit
-  learnings. Use for content strategy, topic clusters, surface selection, SEO
-  planning, AI-answer presence, or when asking where to publish next.
+  Clearcast ORBIT discovery: Stage Triage, Surface Bet Cards, Echo Map, Close
+  Path, Question Spray, Entity Concord, Place Signal, Orbit Dial, Provenance
+  Shelf, Signal Field, and Path Cards. Use for strategy, clusters, SEO surface
+  choice, conversion pages, local signals, or off-site corroboration.
 license: MIT
 ---
 
 # Orbit Discovery
 
-Original Clearcast loop for choosing **where** and **why** to publish before
-**what** to write. Not a copy of any CC-licensed SEO playbook.
-
 ```
 Observe → Reinforce → Build → Instrument → Transmit → (repeat)
 ```
+
+Original Clearcast loop. Not a copy of any CC-licensed SEO playbook.
 
 ## Modes
 
 | Mode | Output |
 |------|--------|
-| `diagnose` | Which ORBIT stage is blocking |
-| `surfaces` | Ranked surface bets for a job |
+| `diagnose` / `triage` | **Stage Triage** — blocking ORBIT stage |
+| `surfaces` / `bet` | **Surface Bet Card** |
+| `echo` | **Echo Map** — off-site corroboration inventory |
+| `close` | **Close Path** — conversion / BOFU brief + audit |
+| `spray` | **Question Spray** — query fan-out / topical questions |
+| `concord` | **Entity Concord** — naming consistency across web assets |
+| `place` | **Place Signal** — local/profile/NAP pack |
+| `dial` | **Orbit Dial** — visibility + revenue scorecard |
+| `shelf` | **Provenance Shelf** — bibliography + stat registry |
+| `field` | **Signal Field** — recent discourse brief |
 | `cluster` | Intent-pure URL graph |
-| `brief` | Asset brief with evidence needs + KPI |
-| `scorecard` | Dual reader score: human buyer + machine extractability |
-| `playbook` | Lightweight path for saas / services / media / local |
+| `graph-brief` | Cluster → spoke briefs (pair with blog-engine `graph-run`) |
+| `brief` | Asset brief with evidence + KPI |
+| `scorecard` | Dual buyer/machine score (legacy short form) |
+| `playbook` | **Path Cards** |
 
 ## ORBIT stages
 
-| Stage | Question | Typical work |
-|-------|----------|--------------|
-| **O**bserve | What jobs are buyers trying to finish? | JTBD list, query themes, objection mining |
-| **R**einforce | Where is the brand corroborated off-site? | Communities, profiles, reviews, mentions, video |
-| **B**uild | What owned asset earns trust + extraction? | Pages, hubs, docs, tools |
-| **I**nstrument | How will we know it worked? | Events, leads, citations watched, not vanity alone |
-| **T**ransmit | What do we learn into the next cycle? | Retire losers, double winners, update triggers |
+| Stage | Question |
+|-------|----------|
+| **O**bserve | What jobs are buyers finishing? |
+| **R**einforce | Where are we corroborated off-site? |
+| **B**uild | What owned asset earns trust + extraction? |
+| **I**nstrument | How will we know it worked? |
+| **T**ransmit | What learning feeds the next cycle? |
 
-## Surfaces (choose explicitly)
+## Surfaces
 
-Name the surface before writing:
+Owned site · classic search · AI answers · community · profiles/directories · video/audio · social (`social-cast`) · sales-assisted · paid landing (when relevant).
 
-1. Owned site / docs
-2. Classic search results
-3. AI answers / overviews
-4. Community threads
-5. Profiles & directories (incl. local where relevant)
-6. Video / audio hubs
-7. Social feeds (hand to `social-cast`)
-8. Sales-assisted pages
+Pick the surface that moves the **next business outcome**.
 
-Do **not** optimize every surface equally. Pick the one that moves the next business outcome.
+## Stage Triage (`triage`)
 
-## Diagnose workflow
+1. Name business outcome  
+2. Inventory evidence  
+3. Mark blocked stage O/R/B/I/T  
+4. Smallest unblock asset  
+5. Claims needing verification  
 
-1. State business outcome (lead, signup, trust, hire, etc.)
-2. Inventory existing evidence (queries, reviews, analytics, sales notes)
-3. Mark the blocked stage (O/R/B/I/T)
-4. Propose the smallest asset that unblocks it
-5. List claims that need verification before publish
+Artifact: [references/surface-bet.md](references/surface-bet.md) (bet card) when Build is next.
 
-## Cluster rules (intent-pure)
+## Echo Map (`echo`)
 
-- One primary job per URL
-- Hub = map + starter path
-- Spokes = decide / act / orient / prove / update
-- Bidirectional descriptive links
-- Reject duplicate jobs
+Inventory where brand facts already appear (reviews, profiles, communities, video, directories). Gap list for Reinforce. See [references/echo-map.md](references/echo-map.md).
 
-Hand long-form production to `blog-engine`. Hand social echoes to `social-cast`.
+## Close Path (`close`)
 
-## Dual scorecard
+Decision-page brief: action, proof, objections, measurement event. Audit existing BOFU pages the same way. [references/close-path.md](references/close-path.md).
 
-Score any proposed asset 0–5 on each:
+## Question Spray (`spray`)
 
-**Buyer**
-- Job clarity
-- Decision risk reduced
-- Next action obvious
+Expand one seed job into fan-out questions / sub-intents; cluster into hub/spoke candidates. No fake volume numbers.
 
-**Machine**
-- Extractable answer opens
-- Entity stability
-- Evidence labels present
+## Entity Concord (`concord`)
 
-Ship into production only if both totals ≥ 10/15 **or** user accepts residual gaps in writing.
+Canonical name, aliases, forbidden variants; check site + profiles + key mentions for drift.
 
-Details: [references/scorecard.md](references/scorecard.md)
+## Place Signal (`place`)
+
+Local/profile pack: categories/services consistency, NAP corroboration, service-page jobs, review themes. [references/place-signal.md](references/place-signal.md).
+
+## Orbit Dial (`dial`)
+
+Extends dual scorecard with visibility vs revenue dials. [references/scorecard.md](references/scorecard.md).
+
+## Provenance Shelf (`shelf`)
+
+Project bibliography + stat registry feeding blog-engine claim ledgers. [references/provenance-shelf.md](references/provenance-shelf.md).
+
+## Signal Field (`field`)
+
+Last-N-days discourse sketch from search (no private API required): themes, objections, phrases for VOICE/CAST. API-free WebSearch with site operators when useful.
+
+## Path Cards (`playbook`)
+
+saas · services · media · local · ecommerce · b2b · affiliate — [references/playbooks.md](references/playbooks.md).
 
 ## Evidence law
 
-- No unsourced public statistics
-- Prefer qualitative strategy language over fake benchmarks
-- If citing a number, require publisher + URL + date in the brief
+No unsourced public statistics. Prefer qualitative strategy over fake benchmarks.
 
-## Playbooks
+## Sister tools
 
-Lightweight paths in [references/playbooks.md](references/playbooks.md). They are starting heuristics, not dogma.
+Strategy notes from voice: [voice-notes-to-anthropic-artifacts](https://github.com/dranshrad/voice-notes-to-anthropic-artifacts). Hub: [docs/ECOSYSTEM.md](../../docs/ECOSYSTEM.md).

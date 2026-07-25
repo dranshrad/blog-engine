@@ -1,27 +1,24 @@
-# Lightweight Playbooks
+# Path Cards
 
-Heuristics only. Adapt to evidence.
+Heuristics only.
 
 ## SaaS
-1. Observe: jobs-to-be-done + competitor comparison queries
-2. Reinforce: review sites, community answers, changelog presence
-3. Build: comparison + implementation hub + integration spokes
-4. Instrument: signup quality, not traffic alone
+Observe jobs + comparisons → Reinforce reviews/community → Build comparison + impl hub → Instrument signup quality.
 
 ## Service business
-1. Observe: local/service intent language
-2. Reinforce: profiles, citations, reviews consistency
-3. Build: service pages with proof + FAQs that match real calls
-4. Instrument: calls/forms by page
+Observe service intent → Reinforce profiles/reviews → Build proof-rich service pages → Instrument calls/forms.
 
 ## Media / creator
-1. Observe: recurring audience questions
-2. Reinforce: clips + community echoes
-3. Build: pillar essays + series
-4. Instrument: return visit + email + meaningful replies
+Observe recurring questions → Reinforce clips/community → Build pillars + series → Instrument return + email.
 
-## Local (when relevant)
-1. Observe: “near me” / city + service jobs
-2. Reinforce: directory + review consistency
-3. Build: location-true pages (no doorway spam)
-4. Instrument: direction requests / calls
+## Local
+Observe city+service jobs → Reinforce NAP/reviews → Build location-true pages → Instrument calls/directions.
+
+## Ecommerce
+Observe category + problem jobs → Reinforce UGC/reviews → Build guides that earn trust before PDP → Instrument assisted revenue.
+
+## B2B lead-gen
+Observe buying committee questions → Reinforce analyst/community proof → Build Close Path pages → Instrument SQL, not traffic.
+
+## Affiliate
+Observe decision criteria → Reinforce transparent methodology → Build comparison spines with disclosure → Instrument qualified clicks; never fake tests.

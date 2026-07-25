@@ -1,93 +1,80 @@
 ---
 name: editorial-pass
 description: >-
-  Multi-pass editorial refinement with inspectable numbered intermediates.
-  Runs a configurable SPARK pass chain: Sanitize → Pace → Architecture →
-  Reference → Knife. Preserves author voice, never invents facts, and can
-  hand off to blog-engine stress tests. Use when polishing a draft, running
-  an editing pipeline, or multi-pass prose refinement.
+  Clearcast SPARK multi-pass editor plus Tone Retarget, Locale Lock, Voice
+  Specimens, Style Pattern Mine, and Voice Canon. Preserves author voice, never
+  invents facts. Use when polishing drafts, retargeting tone, or building a
+  style guide from samples.
 license: MIT
 ---
 
 # Editorial Pass (SPARK Chain)
 
-Original multi-pass editor for Clearcast. Not a UK-locale pipeline and not a
-port of third-party writing-squad plugins.
+Original Clearcast multi-pass editor. Not a forced-UK writing-squad port.
 
-**Core law:** preserve author voice. Fix clarity and correctness; do not
-homogenize personality.
+**Core law:** preserve author voice.
+
+## Modes
+
+| Mode | Job |
+|------|-----|
+| `spark` | Full or partial SPARK chain (default) |
+| `tone` | **Tone Retarget** — new tone, same substance |
+| `locale-lock` | **Locale Lock** — en-US / en-GB / custom glossary |
+| `specimens` | **Voice Specimens** — annotated samples |
+| `mine` | **Style Pattern Mine** — patterns from samples |
+| `canon` | **Voice Canon** — synthesize `VOICE.md` |
 
 ## SPARK passes
 
 | # | Pass | Does | Must not |
 |---|------|------|----------|
-| 1 | **Sanitize** | Typos, grammar, broken markdown, consistency of spelling locale chosen by user | Rewrite voice |
-| 2 | **Pace** | Rhythm, paragraph breaks, cut throat-clearing | Add new claims |
-| 3 | **Architecture** | Headings, order, intent purity flags | Invent sections with new facts |
-| 4 | **Reference** | Flag unsourced material claims; propose citation slots | Fabricate sources |
-| 5 | **Knife** | Cut filler; tighten; optional SEO polish only on visible truth | Keyword stuffing |
+| 1 | Sanitize | Typos, grammar, markdown, locale consistency | Rewrite voice |
+| 2 | Pace | Rhythm, cuts throat-clearing | Add claims |
+| 3 | Architecture | Headings, order, intent flags | Invent facts |
+| 4 | Reference | Flag unsourced claims | Fabricate sources |
+| 5 | Knife | Tighten; optional SEO on visible truth | Keyword stuffing |
 
-User may skip, reorder, or stop after any pass.
+Skip/reorder/stop allowed. Full SPARK → write intermediates without pausing.
 
-## Locale
+## Intermediates
 
-Ask once: `en-US` | `en-GB` | `keep-as-is`. Default `keep-as-is`.
-Do not force British English.
-
-## Workspace intermediates
-
-Write under a working folder the user chooses (default `./editorial/<slug>/`):
+Default `./editorial/<slug>/`:
 
 ```
 00_original.md
-01_sanitize.md
-02_pace.md
-03_architecture.md
-04_reference.md
-05_knife.md
+01_sanitize.md … 05_knife.md
 final.md
 pass-log.md
 ```
 
-Never overwrite the user’s source file; always copy into `00_original.md` first.
-
-## Pass log format
-
-```markdown
-## Pass log
-| Pass | Changes (count) | Voice drift risk | Notes |
-|------|----------------:|------------------|-------|
-| Sanitize | 12 | low | … |
-```
+Never overwrite the source; copy to `00_original.md` first.
 
 ## Voice lock
 
-Before pass 1, extract a short **voice lock** (see [references/voice-lock.md](references/voice-lock.md)):
+Before pass 1: [references/voice-lock.md](references/voice-lock.md). Revert flattening edits.
 
-- Sentence length tendency
-- Formality
-- Humor allowance
-- Banned phrases (from `VOICE.md` if present)
+## Tone Retarget (`tone`)
 
-Every pass must re-check the voice lock. If a pass would flatten voice, revert that change.
+Inputs: draft + target tone (e.g. warmer, more formal, less hype).  
+Constraints: zero new claims; preserve meaning; emit diff summary of tone moves only.
+
+## Locale Lock (`locale-lock`)
+
+Apply chosen locale + optional glossary. Default `keep-as-is` if unspecified. Never force en-GB.
+
+## Voice Specimens → Mine → Canon
+
+1. **specimens** — store annotated samples under `./voice/specimens/`  
+2. **mine** — extract recurring patterns (length, openers, humor, bans)  
+3. **canon** — write/update `VOICE.md` for suite-wide use  
+
+See [references/voice-canon.md](references/voice-canon.md).
 
 ## Fact freeze
 
-- No new statistics, quotes, or studies
-- Reference pass only marks gaps (`[CITE NEEDED: claim]`) or links user-provided sources
-- For publish-ready evidence, hand off to `blog-engine` `verify` / claim ledger
+No new stats/quotes/studies. Publish-ready evidence → `blog-engine` `verify`.
 
-## Optional bridges
+## Bridges
 
-- After Knife → run `blog-engine` `score` if the piece is a blog post
-- After Knife → run `social-cast` `atomize` if user wants social packs
-- If YMYL topic → require `blog-engine` YMYL intensifier before calling it done
-
-## Interaction pattern
-
-After each pass:
-
-1. Summarize what changed (≤5 bullets)
-2. Ask: continue / skip next / stop / re-run this pass
-
-If user said “run full SPARK”, continue without pausing until `final.md`.
+After Knife → optional `blog-engine` `score` or `social-cast` `atomize`. YMYL → blog-engine intensifier.

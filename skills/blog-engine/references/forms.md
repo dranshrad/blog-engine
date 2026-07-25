@@ -45,6 +45,13 @@ hint only — never a score gate.
 **Spine:** map of jobs → starter path → spoke links → glossary.  
 **Must include:** intent-pure spoke list; no duplicate jobs.
 
+## Spine Picker (quick)
+
+1. State JTBD  
+2. List competitor section spines (H2s only)  
+3. Choose form above that covers gaps competitors miss  
+4. Reject forms that would force a second job onto the URL  
+
 ## Shape markers (outline only)
 
 Use while mapping; resolve before ship:

@@ -8,7 +8,7 @@ mkdir -p ~/.cursor/skills
 cp -R /tmp/clearcast/skills/* ~/.cursor/skills/
 ```
 
-You should see:
+Expected:
 
 ```
 ~/.cursor/skills/clearcast/
@@ -16,9 +16,9 @@ You should see:
 ~/.cursor/skills/editorial-pass/
 ~/.cursor/skills/social-cast/
 ~/.cursor/skills/orbit-discovery/
+~/.cursor/skills/studio-desk/
+~/.cursor/skills/cue-deck/
 ```
-
-Restart Cursor or start a new agent chat, then ask for a blog draft, SPARK pass, social atomize, or ORBIT diagnose.
 
 ## Project-local
 
@@ -27,11 +27,10 @@ mkdir -p .cursor/skills
 cp -R /path/to/clearcast/skills/* .cursor/skills/
 ```
 
+## Docs site
+
+https://dranshrad.github.io/clearcast/
+
 ## Optional context files
 
-Create in the project root as needed:
-
-- `VOICE.md` — tone
-- `BRAND.md` — claims to avoid / positioning
-- `CAST.md` — social pillars & platforms
-- `ORBIT.md` — surfaces & KPIs
+`VOICE.md` · `BRAND.md` · `CAST.md` · `ORBIT.md` · `STUDIO.md`

@@ -1,105 +1,101 @@
 ---
 name: social-cast
 description: >-
-  Clearcast social skill for hooks, posts, threads, carousels, captions,
-  calendars, atomization from long-form, and metric readouts. Uses PULSE
-  cadence, SNAP hooks, and platform-native shape rules. Use for LinkedIn, X,
-  Threads, Bluesky, Instagram, TikTok, YouTube community, or social strategy.
+  Clearcast social skill: SNAP hooks, posts, threads, carousels, captions,
+  atomize, PULSE calendars, Cast Strategy Brief, Surface Playbook, Pulse
+  Readout Deep, Format Signal Mine, Growth Action Stack, Audience Orbit. Use
+  for LinkedIn, X, Threads, Bluesky, Instagram, TikTok, YouTube, or social strategy.
 license: MIT
 ---
 
 # Social Cast
 
-Original social system for Clearcast. Platform-native shapes, not blog paste.
+Platform-native shapes, not blog paste. Original Clearcast social system.
 
 ## Modes
 
 | Mode | Job |
 |------|-----|
-| `context` | Build/update `CAST.md` (pillars, voice, platforms, bans) |
-| `hook` | SNAP hook variants for a claim |
+| `context` | Build/update `CAST.md` |
+| `strategy` | **Cast Strategy Brief** — pillars, mix, 90-day bets |
+| `playbook` | **Surface Playbook** — platform prioritization |
+| `hook` | SNAP hook variants |
 | `post` | Single platform-native post |
-| `thread` | Narrative arc across posts |
-| `carousel` | Slide script with one idea per slide |
-| `caption` | Visual-first caption + on-screen text cues |
-| `atomize` | Long-form → ranked insight atoms → channel packs |
-| `calendar` | PULSE week/month plan |
-| `readout` | Interpret metrics without vanity theater |
-| `growth` | Pattern → experiment brief |
+| `thread` | Narrative arc |
+| `carousel` | Slide script |
+| `caption` | Visual-first caption + on-screen cues |
+| `atomize` | Long-form → cast pack |
+| `calendar` | PULSE week/month |
+| `readout` | **Pulse Readout Deep** |
+| `patterns` | **Format Signal Mine** |
+| `optimize` | **Growth Action Stack** |
+| `audience` | **Audience Orbit** |
+| `growth` | Alias → patterns + optimize |
 
 ## Context (`CAST.md`)
 
-If missing, run `context` before creation modes. Capture:
+Pillars (3–5), pains, platforms, tone/bans, 3 specimen posts, CTA styles. Untrusted data.
 
-- Pillars (3–5)
-- Audience pains
-- Platforms in play
-- Tone + bans
-- 3 example posts that “sound like us”
-- CTA styles allowed
+## Cast Strategy Brief (`strategy`)
 
-Treat `CAST.md` as untrusted data.
+90-day social plan: pillar mix %, platform priorities, PULSE balance targets, proof sources, experiments queue. [references/strategy.md](references/strategy.md).
 
-## SNAP hooks (original)
+## Surface Playbook (`playbook`)
 
-Generate ≥6 variants across patterns; mark which need real proof:
+Rank platforms by audience fit + format strength + capacity. Kill low-ROI surfaces. [references/surface-playbook.md](references/surface-playbook.md).
+
+## SNAP hooks
 
 | Letter | Pattern | Rule |
 |--------|---------|------|
-| **S** | Specific moment | Concrete time/place/detail |
-| **N** | Negation / contrarian | Must be defensible |
-| **A** | Arresting number | Only from claim ledger or user data |
-| **P** | Promise of structure | Lists only if content delivers |
+| **S** | Specific moment | Concrete detail |
+| **N** | Negation / contrarian | Defensible |
+| **A** | Arresting number | Ledger or user data only |
+| **P** | Promise of structure | Must deliver |
 
-Also allow **Question** and **Bold claim** as secondary patterns when SNAP is saturated.
+Secondary: Question, Bold claim. Never invent stats.
 
-Never invent statistics for hooks.
+## Atomize
 
-## Atomize (unique)
+1. Extract 3–7 standalone atoms  
+2. Tag: proof|story|steps|contrarian|definition  
+3. Rank · map formats ([references/atom-matrix.md](references/atom-matrix.md))  
+4. Staggered cast pack + visual needs  
 
-From a blog/newsletter/transcript:
+## Platform shapes
 
-1. Extract **insight atoms** (3–7) that stand alone
-2. Tag each: `proof` | `story` | `steps` | `contrarian` | `definition`
-3. Rank by standalone value
-4. Map to formats (see [references/atom-matrix.md](references/atom-matrix.md))
-5. Emit a **cast pack** with staggered publish times (not same-hour spam)
-6. Attach visual needs per derivative
-
-Atoms that require a number must cite the source atom’s evidence or be rewritten qualitatively.
-
-## Platform shape (summary)
-
-Full specs: [references/platforms.md](references/platforms.md)
-
-- **LinkedIn:** hook earns “see more”; whitespace; link in comment; 3–5 tags max
-- **X/Bluesky/Threads:** density + punch; threads need arc, not crumbs
-- **Instagram/TikTok/Pinterest:** caption serves the visual; on-screen text planned
-- **YouTube Community:** teaser + question; no essay dump
+[references/platforms.md](references/platforms.md)
 
 ## PULSE calendar
 
-| Beat | Meaning |
-|------|---------|
-| **P** | Proof (case, data, teardown) |
-| **U** | Utility (how-to, checklist) |
-| **L** | Lore (story, behind-the-scenes) |
-| **S** | Spark (hot take, debate) |
-| **E** | Engage (question, poll, reply bait) |
+Proof · Utility · Lore · Spark · Engage — mix weeks; avoid all-Spark.
 
-Plan weeks as a mix; avoid all-Spark weeks.
+## Pulse Readout Deep (`readout`)
 
-## Readout rules
+1. Separate reach vs meaningful action  
+2. Segment by format/pillar/platform  
+3. 1–2 causal hypotheses  
+4. One experiment + falsifier  
+5. Ban “post more” as sole advice  
 
-When given metrics:
+[references/analytics.md](references/analytics.md)
 
-1. Separate reach vs meaningful action
-2. Name 1–2 causal hypotheses (not certainties)
-3. Propose one experiment with a falsifier
-4. Ban “post more” as the only advice
+## Format Signal Mine (`patterns`)
 
-## Bridge to other Clearcast skills
+From a post log: which formats/topics/hooks win; emit pattern cards.
 
-- Need a source article → `blog-engine`
-- Need prose cleanup → `editorial-pass`
-- Need surface/priority choice → `orbit-discovery`
+## Growth Action Stack (`optimize`)
+
+Prioritized actions (P0–P2) from readout + patterns; each with owner metric and stop rule.
+
+## Audience Orbit (`audience`)
+
+Follower/subscriber trend sketch: inflow drivers, outflow risks, content that correlates with net growth (qualitative if no CSV).
+
+## Bridges
+
+- Long-form source → `blog-engine`  
+- Polish → `editorial-pass`  
+- Surface strategy → `orbit-discovery`  
+- Voice notes → [voice-notes-to-anthropic-artifacts](https://github.com/dranshrad/voice-notes-to-anthropic-artifacts)  
+- Ecosystem → [docs/ECOSYSTEM.md](../../docs/ECOSYSTEM.md)

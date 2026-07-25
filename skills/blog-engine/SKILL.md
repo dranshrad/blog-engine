@@ -2,225 +2,157 @@
 name: blog-engine
 description: >-
   Clearcast long-form skill: CLEAR rubric, claim ledgers, adversarial Q-tests,
-  YMYL intensifiers, residual-risk registers. Use for blog drafts, rewrites,
-  briefs, evidence audits, citation checks, or publish readiness. Part of the
-  clearcast suite with editorial-pass, social-cast, and orbit-discovery.
+  YMYL, Ship Scan, Cite Surface Audit, Freshness Drift, Graph Runner, Locale
+  Lattice, and Release Latch. Use for blog drafts, rewrites, SEO audits,
+  citation checks, clusters, multilingual plans, or publish readiness.
 license: MIT
 ---
 
 # Blog Engine (CLEAR Editorial System)
 
-An original publish-readiness skill for Cursor. It is **not** a port, fork, or
-thin rewrite of any third-party Claude Code blog plugin.
+Original Clearcast long-form skill. Not a port of any third-party blog plugin.
 
-Industry basics (headings, schema, sourcing) are general craft. The workflows,
-rubric, artifacts, and failure modes below are unique to this skill.
-
-**Ship rule:** no draft is shown as final until CLEAR ≥ 85, every material claim
-is ledgered, adversarial Q-tests pass, and residual risk is empty or accepted.
-
-## When to load this skill
-
-- New post, rewrite, brief, outline, or cluster plan
-- “Is this publish-ready?” / evidence check / citation check
-- YMYL topics (health, money, law, safety)
-- Multi-audience posts that need intent purity
+**Ship rule:** CLEAR ≥ 85, claim ledger clean, Q-tests pass, residual risk
+accepted, and (when requested) Ship Scan + Release Latch green.
 
 ## Modes
 
 | Mode | Goal |
 |------|------|
-| `draft` | Produce a new article from a job-to-be-done |
-| `improve` | Rewrite with a diff contract (keep / change / delete) |
-| `score` | Run CLEAR + emit claim ledger + residual risks |
-| `brief` | Competitive teardown + angle + evidence plan |
-| `map` | Outline as reader journey, not keyword outline |
-| `verify` | Claim-by-claim source audit |
-| `cite-probe` | Adversarial Q-test against AI-answer style questions |
-| `cluster` | Intent-pure topic graph (one job per URL) |
-| `adapt` | Channel packs (newsletter, LinkedIn, Reddit, short video) |
-| `ymyl` | Extra medical/finance/legal gates |
-| `calendar` | Publishing cadence tied to update triggers |
+| `draft` | New article from JTBD + Spine Picker |
+| `improve` | Rewrite under a diff contract |
+| `score` | CLEAR + ledger + residual risks |
+| `brief` | Competitive teardown + evidence plan |
+| `horizon` | **Horizon Brief** — 90-day intent + surface bets |
+| `spine` | **Spine Picker** — form from JTBD + competitive gaps |
+| `map` | Reader-journey outline |
+| `verify` | Claim audit (**Claim Probe+**) |
+| `cite-probe` | 5 AI-style extractability questions |
+| `cite-surface` | **Cite Surface Audit** — full citation readiness |
+| `ship-scan` | **Ship Scan** — SEO + extractability checklist |
+| `collision` | **Job Collision Map** — overlapping URL jobs |
+| `cluster` | Intent-pure graph |
+| `graph-run` | **Graph Runner** — plan → spoke briefs → ship order |
+| `freshness` | **Freshness Drift** — refresh/consolidate/prune |
+| `mirror` | **Mirror Markup** — schema from visible truth |
+| `locale` | **Locale Lattice** — translate/localize/hreflang plan |
+| `frame` | **Frame & Tone Kit** — visual/chart/TTS briefs |
+| `signal-bridge` | **Signal Bridge** — CWV/GSC/GA adapter checklist |
+| `release` | **Release Latch** — packaging before handoff |
+| `adapt` | Channel packs (prefer `social-cast` `atomize` for depth) |
+| `ymyl` | YMYL intensifier |
+| `calendar` | Cadence + update triggers |
 
-Default when the user only gives a topic: `draft` after one short JTBD question.
+Default for a bare topic: `draft` after one JTBD question.
 
-## CLEAR rubric (100 points)
+## CLEAR rubric (100)
 
-Full checklist: [references/clear-rubric.md](references/clear-rubric.md)
+See [references/clear-rubric.md](references/clear-rubric.md): Claim 25 · Lexical 15 · Entity 15 · Answer 25 · Reader-job 20. Ship at ≥ 85.
 
-| Letter | Dimension | Points |
-|--------|-----------|-------:|
-| **C** | Claim integrity | 25 |
-| **L** | Lexical clarity | 15 |
-| **E** | Entity coherence | 15 |
-| **A** | Answer extractability | 25 |
-| **R** | Reader-job fit | 20 |
+## Core draft artifacts
 
-Bands: 85–100 ship · 70–84 revise · <70 rebuild from map.
+Every `draft` / `improve` emits: article, claim ledger, adversarial Q-test,
+residual risks, CLEAR scorecard. Templates: [references/artifacts.md](references/artifacts.md).
 
-## Artifacts every draft must produce
+## Draft pipeline (summary)
 
-Unlike checklist-only systems, every `draft` / `improve` run emits:
+1. Lock JTBD · 2. Intent purity · 3. Evidence plan · 4. Spine Picker + journey map · 5. Write extractable answers · 6. Stress tests · 7. Deliver or block.
 
-1. **Article** (markdown or detected platform format)
-2. **Claim ledger** — every material fact with status `verified` / `attributed` / `author-supplied` / `blocked`
-3. **Adversarial Q-test** — 5 questions an AI assistant might ask; draft must answer each in ≤120 words with a citeable passage
-4. **Residual risk register** — open risks the human must accept or fix
-5. **CLEAR scorecard**
+Full craft: [references/craft.md](references/craft.md) · forms: [references/forms.md](references/forms.md) · evidence: [references/evidence.md](references/evidence.md).
 
-Templates: [references/artifacts.md](references/artifacts.md)
+### Stress tests (blocking)
 
-## Draft pipeline
+| # | Test | Pass |
+|---|------|------|
+| 1 | Claim ledger | No `blocked` material rows |
+| 2 | Contradiction hunt | No internal conflicts |
+| 3 | Q-test | 5/5 extractable |
+| 4 | CLEAR | ≥ 85 |
+| 5 | YMYL | Intensifier green if triggered |
+| 6 | Accessibility | Alt, links, heading order |
 
-### 1. Lock the reader job (JTBD)
+## Extended modes (quick contracts)
 
-Write one sentence:
+### Horizon Brief (`horizon`)
 
-> When [situation], [reader] wants to [progress], so they can [outcome].
+90-day plan: ICP jobs, surface bets, hub/spoke candidates, evidence gaps, KPI per asset. Hand production to `draft` / `graph-run`.
 
-Reject keyword-only briefs. If the post tries two jobs, split into two URLs
-(`cluster` mode) instead of stuffing one page.
+### Spine Picker (`spine`)
 
-### 2. Intent purity check
+Pick form from [references/forms.md](references/forms.md) using JTBD + competitor spine gaps. Output: chosen form + rejected forms + why.
 
-Fail if any of these are true:
+### Ship Scan (`ship-scan`)
 
-- Title promises A, body delivers B
-- >2 primary intents share the URL
-- Comparison + tutorial + news dump in one page without a clear spine
+Owned SEO + extractability checklist (titles, meta, headings, links, OG, schema mirror, extractable opens). See [references/ship-scan.md](references/ship-scan.md). Separate from CLEAR.
 
-### 3. Evidence plan before prose
+### Job Collision Map (`collision`)
 
-Build the claim ledger skeleton first (empty rows OK). Prefer:
+Given a corpus (paths or titles+jobs), flag overlapping JTBDs. Recommend merge, differentiate, or prune.
 
-- Primary documents, datasets, official docs
-- Named methodology
-- Diverse publishers (see Source Diversity Index in [references/evidence.md](references/evidence.md))
+### Cite Surface Audit (`cite-surface`)
 
-**Never invent statistics, quotes, studies, or “internal data.”**
-Author anecdotes require author-supplied specifics; otherwise omit first person.
+Full citation readiness beyond `cite-probe`: entity stability, passage inventory, crawler access notes, structure for extraction. [references/cite-surface.md](references/cite-surface.md).
 
-### 4. Map the journey
+### Claim Probe+ (`verify`)
 
-Outline as stages, not a generic H2 list:
+Per claim: support status, confidence (`high`/`med`/`low`), echo risk (same claim repeated without new evidence), fix action.
 
-1. Orient (problem + stakes)
-2. Decide (criteria / trade-offs)
-3. Act (steps or recommendation)
-4. Verify (how to know it worked)
-5. Next (single CTA or next URL)
+### Freshness Drift (`freshness`)
 
-Form guidance: [references/forms.md](references/forms.md)
+From traffic/export deltas or stale dates: classify refresh / consolidate / prune; attach update triggers. [references/freshness.md](references/freshness.md).
 
-### 5. Write with extractable answers
+### Graph Runner (`graph-run`)
 
-- Open each major section with a declarative answer sentence
-- Keep entity names stable
-- Use tables only for real comparisons
-- Summary box only when it helps scanning
-- One focused CTA after value is delivered
+Cluster plan → ordered spoke briefs → ship sequence with dependencies. Reject duplicate jobs.
 
-Craft rules: [references/craft.md](references/craft.md)
+### Mirror Markup (`mirror`)
 
-### 6. Stress tests (blocking)
+Emit JSON-LD only mirroring visible content (`BlogPosting`/`Article`, `Person`/`Organization`, `BreadcrumbList`). No invisible FAQ games.
 
-Run in order; any fail blocks “final”:
+### Locale Lattice (`locale`)
 
-| # | Test | Pass criteria |
-|---|------|---------------|
-| 1 | Claim ledger | No `blocked` rows; material claims `verified` or `attributed` |
-| 2 | Contradiction hunt | No internal conflicts (numbers, advice, definitions) |
-| 3 | Adversarial Q-test | 5/5 questions answered by extractable passages |
-| 4 | CLEAR score | ≥ 85 |
-| 5 | YMYL intensifier | If topic is YMYL, all intensifier checks green |
-| 6 | Accessibility | Alt text, link purpose, heading order, reading sequence |
+Plan locales, adaptation depth (translate vs cultural), hreflang pairs, parity checklist. [references/locale-lattice.md](references/locale-lattice.md).
 
-### 7. Deliver
+### Frame & Tone Kit (`frame`)
 
-Return article + four artifacts. If blocked, return diagnostics only — do not
-present a failing draft as ready.
+Tool-agnostic briefs: hero brief, chart-from-ledger, optional TTS narration brief. [references/frame-tone.md](references/frame-tone.md).
 
-## Improve pipeline (diff contract)
+### Signal Bridge (`signal-bridge`)
 
-Before rewriting, state:
+Checklist for plugging CWV, Search Console, analytics, keyword exports — no vendor lock-in. [references/signal-bridge.md](references/signal-bridge.md).
 
-```markdown
-## Diff contract
-- KEEP: [voice, unique data, structure pieces]
-- CHANGE: [weak evidence, muddy sections, missing answers]
-- DELETE: [filler, duplicate intents, unsupported claims]
-- MUST NOT: [invent facts, change dates without substance]
-```
+### Release Latch (`release`)
 
-Then rewrite under that contract and re-run stress tests.
+Pre-handoff: required artifacts present, links resolve policy, hero/social image notes, review.md summary. [references/release-latch.md](references/release-latch.md).
 
-## Cite-probe (unique mode)
+## YMYL
 
-Simulate five user questions an AI system might receive about the topic.
-For each:
+See [references/ymyl.md](references/ymyl.md).
 
-1. Quote the exact passage from the draft that answers it
-2. Note missing evidence
-3. Propose a ≤40-word patch if the passage fails standalone extraction
+## Works with (sister tools)
 
-This is outcome-oriented (would we be cited?) rather than schema folklore.
-
-## YMYL intensifier
-
-Trigger for health, finance, law, safety, or major life decisions:
-
-- Require higher-tier sources and visible limitations
-- Ban absolute guarantees
-- Add “who this is / isn’t for”
-- Prefer clinician/qualified reviewer attribution when the user supplies one
-- Residual risk must include harm scenarios
-
-Details: [references/ymyl.md](references/ymyl.md)
-
-## Cluster mode (intent-pure graph)
-
-Produce a graph where **each URL has one job**:
-
-- Hub = orientation + decision map
-- Spokes = single jobs (how-to, comparison, definition, data)
-- Edges = descriptive anchors both ways
-- Reject spokes that duplicate another spoke’s job
-
-## Adapt mode
-
-From one canonical article, emit channel packs that **change shape**, not just
-truncate:
-
-| Channel | Transform |
-|---------|-----------|
-| Newsletter | Hook + 3 bullets + one CTA |
-| LinkedIn | POV opener + one proof + question |
-| Reddit | Problem-first, no marketing voice, invite correction |
-| Short video | 8s hook, 3 beats, end card |
-
-## What this skill deliberately does not do
-
-- No 30-subcommand mega-orchestrator
-- No dependency on a private script farm or installers
-- No community footers, marketplace packaging, or third-party brand voice
-- No fake “Google guarantees” from schema or FAQPage tricks
-- No authorship detection theater
+- Voice drafts: [voice-notes-to-anthropic-artifacts](https://github.com/dranshrad/voice-notes-to-anthropic-artifacts)
+- Self-heal loops (code parallel): [automated-self-correction-loop](https://github.com/dranshrad/automated-self-correction-loop)
+- Suite hub: [docs/ECOSYSTEM.md](../../docs/ECOSYSTEM.md)
 
 ## Progressive disclosure
 
-| File | Load when |
-|------|-----------|
+| File | When |
+|------|------|
 | [clear-rubric.md](references/clear-rubric.md) | Scoring |
-| [artifacts.md](references/artifacts.md) | Ledgers, Q-tests, risk registers |
-| [evidence.md](references/evidence.md) | Sourcing, diversity, fact checks |
-| [craft.md](references/craft.md) | Prose, structure, accessibility |
-| [forms.md](references/forms.md) | Article shapes by job |
-| [ymyl.md](references/ymyl.md) | High-stakes topics |
+| [artifacts.md](references/artifacts.md) | Ledgers / Q-tests |
+| [evidence.md](references/evidence.md) | Sourcing |
+| [craft.md](references/craft.md) | Prose / a11y |
+| [forms.md](references/forms.md) | Spines |
+| [ship-scan.md](references/ship-scan.md) | SEO checklist |
+| [cite-surface.md](references/cite-surface.md) | Citation audit |
+| [freshness.md](references/freshness.md) | Decay |
+| [locale-lattice.md](references/locale-lattice.md) | i18n |
+| [frame-tone.md](references/frame-tone.md) | Media briefs |
+| [signal-bridge.md](references/signal-bridge.md) | Analytics adapters |
+| [release-latch.md](references/release-latch.md) | Packaging |
+| [ymyl.md](references/ymyl.md) | High-stakes |
 
 ## Provenance
 
-Copyright (c) 2026 Divyansh Gupta. MIT License.
-This skill’s frameworks (CLEAR, claim ledger, adversarial Q-test, residual risk
-register, intent purity, diff contract) are original to this repository.
-Generic SEO/AEO practices are industry knowledge, not copied from a specific
-plugin codebase.
+Copyright (c) 2026 Divyansh Gupta. MIT. CLEAR and listed modes are original to Clearcast.

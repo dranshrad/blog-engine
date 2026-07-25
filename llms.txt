@@ -1,0 +1,32 @@
+# Clearcast
+
+> Cursor agent skills for CLEAR blog publishing, SPARK editorial passes, SNAP/PULSE social casting, ORBIT multi-surface discovery, Studio Desk ops, and Cue Deck prompts.
+
+MIT License. Canonical repo: https://github.com/dranshrad/clearcast
+Docs site: https://dranshrad.github.io/clearcast/
+
+## Skills
+
+- skills/clearcast/SKILL.md — orchestrator
+- skills/blog-engine/SKILL.md — CLEAR long-form + SEO/AEO modes
+- skills/editorial-pass/SKILL.md — SPARK + voice canon
+- skills/social-cast/SKILL.md — social creation + analytics
+- skills/orbit-discovery/SKILL.md — ORBIT strategy
+- skills/studio-desk/SKILL.md — workspace ops
+- skills/cue-deck/SKILL.md — prompt cards
+
+## Docs
+
+- https://dranshrad.github.io/clearcast/
+- https://dranshrad.github.io/clearcast/getting-started.html
+- https://dranshrad.github.io/clearcast/frameworks.html
+- https://dranshrad.github.io/clearcast/ECOSYSTEM.html
+- https://dranshrad.github.io/clearcast/COVERAGE.html
+- https://dranshrad.github.io/clearcast/faq.html
+
+## Sister repositories
+
+- https://github.com/dranshrad/voice-notes-to-anthropic-artifacts
+- https://github.com/dranshrad/llm-cst-refactorer
+- https://github.com/dranshrad/automated-self-correction-loop
+- https://github.com/dranshrad/anthropic-audio-gateway

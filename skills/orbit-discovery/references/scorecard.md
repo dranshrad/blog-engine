@@ -1,29 +1,31 @@
-# Dual Scorecard
+# Dual Scorecard + Orbit Dial
 
-Rate 0–5. Totals out of 15 per lens.
+## Dual scorecard (0–5 each, /15 per lens)
 
-## Buyer lens
+**Buyer:** Job clarity · Risk reduced · Next action  
+**Machine:** Extractable opens · Entity stability · Evidence labels  
 
-| Criterion | 0 | 3 | 5 |
-|-----------|---|---|---|
-| Job clarity | Unclear who/why | Implied | Explicit JTBD |
-| Risk reduced | No decision help | Partial criteria | Clear pick/act path |
-| Next action | None | Vague | Single obvious step |
+Ship guidance: both ≥ 10/15 or accept residuals.
 
-## Machine lens
+## Orbit Dial (extended)
 
-| Criterion | 0 | 3 | 5 |
-|-----------|---|---|---|
-| Extractable opens | Buried answers | Mixed | Declarative section opens |
-| Entity stability | Synonym chaos | Mostly stable | Canonical naming |
-| Evidence labels | Bare claims | Some cites | Material claims labeled |
+Add 0–5 each:
 
-## Template
+| Dial | Meaning |
+|------|---------|
+| Visibility | Can the asset be found on the chosen surface? |
+| Corroboration | Off-site echoes support the same facts? |
+| Revenue link | Clear path to a business event? |
+| Maintenance | Update triggers defined? |
 
 ```markdown
-## Dual scorecard — [asset]
+## Orbit Dial — [asset]
 Buyer: /15
 Machine: /15
+Visibility: /5
+Corroboration: /5
+Revenue link: /5
+Maintenance: /5
+**Dial total:** /40
 Blockers:
-Residual accepts:
 ```
