@@ -1,11 +1,10 @@
 ---
 name: blog-engine
 description: >-
-  Original editorial system for drafting, stress-testing, and shipping blog
-  posts. Uses the CLEAR rubric, claim ledgers, adversarial Q-tests, YMYL
-  intensifiers, and residual-risk registers. Use when writing or rewriting
-  articles, content briefs, evidence audits, citation checks, or publish
-  readiness reviews.
+  Clearcast long-form skill: CLEAR rubric, claim ledgers, adversarial Q-tests,
+  YMYL intensifiers, residual-risk registers. Use for blog drafts, rewrites,
+  briefs, evidence audits, citation checks, or publish readiness. Part of the
+  clearcast suite with editorial-pass, social-cast, and orbit-discovery.
 license: MIT
 ---
 

@@ -1,67 +1,58 @@
-# blog-engine
+# Clearcast
 
-**CLEAR Editorial System** — an original Cursor Agent Skill for drafting, stress-testing, and shipping blog posts.
+**Original Cursor skill suite for long-form publishing, editorial refinement, social casting, and multi-surface discovery.**
 
 MIT License © 2026 Divyansh Gupta
 
-## What makes this different
+Clearcast is **not** a fork or mash-up of third-party Claude plugin trees. It was designed as one coherent system after studying the content landscape (blog engines, editorial pipelines, social skill packs, and multi-surface SEO knowledge bases) and then writing new frameworks, names, artifacts, and workflows from scratch.
 
-This is **not** a port of any third-party Claude Code blog plugin. It ships its own system:
+## Skills
 
-| Feature | What it does |
-|---------|--------------|
-| **CLEAR rubric** | Claim · Lexical · Entity · Answer · Reader-job (unique weights) |
-| **Claim ledger** | Every material fact tracked to a source status |
-| **Adversarial Q-test** | 5 AI-style questions must be answerable from extractable passages |
-| **Residual risk register** | Explicit accept/fix gate for open risks |
-| **Intent purity** | One reader job per URL; multi-job posts get split |
-| **Diff contract** | KEEP / CHANGE / DELETE rules before rewrites |
-| **YMYL intensifier** | Extra blockers for health, money, law, safety |
-| **Source Diversity Index** | Penalizes monoculture citations |
-| **Update triggers** | Substance-based freshness, not date cosmetics |
+| Skill | Framework | Use for |
+|-------|-----------|---------|
+| [`clearcast`](skills/clearcast/) | Router | Pick the right skill / compose a pipeline |
+| [`blog-engine`](skills/blog-engine/) | **CLEAR** | Articles with claim ledgers, Q-tests, YMYL gates |
+| [`editorial-pass`](skills/editorial-pass/) | **SPARK** | Multi-pass polish with numbered intermediates |
+| [`social-cast`](skills/social-cast/) | **SNAP + PULSE** | Hooks, posts, threads, atomize, calendars |
+| [`orbit-discovery`](skills/orbit-discovery/) | **ORBIT** | Surface choice, clusters, dual scorecards |
 
-Ship only when CLEAR ≥ 85 **and** stress tests pass.
+### Unique suite features
+
+- Claim ledger + adversarial Q-test + residual risk (blog)
+- SPARK inspectable intermediates + voice lock + fact freeze (editorial)
+- SNAP hooks + atomize cast packs + PULSE cadence (social)
+- ORBIT loop + dual buyer/machine scorecard + intent-pure clusters (discovery)
+- Optional project files: `VOICE.md`, `BRAND.md`, `CAST.md`, `ORBIT.md`
 
 ## Install
 
-**Personal (all projects):**
-
 ```bash
-git clone https://github.com/dranshrad/blog-engine.git ~/.cursor/skills/blog-engine
+git clone https://github.com/dranshrad/clearcast.git
+cp -R clearcast/skills/* ~/.cursor/skills/
 ```
 
-**Project-only:**
+Or copy only the skills you need into `.cursor/skills/` inside a project.
 
-```bash
-mkdir -p .cursor/skills
-git clone https://github.com/dranshrad/blog-engine.git .cursor/skills/blog-engine
-```
+## Typical pipelines
 
-## Modes
+**Flagship article → social week**
+1. `orbit-discovery` `diagnose` / `brief`
+2. `blog-engine` `draft` → stress tests
+3. `editorial-pass` full SPARK (optional)
+4. `social-cast` `atomize` → `calendar`
 
-`draft` · `improve` · `score` · `brief` · `map` · `verify` · `cite-probe` · `cluster` · `adapt` · `ymyl` · `calendar`
+**Polish only**
+1. `editorial-pass` with voice lock
+2. Optional `blog-engine` `score`
 
-## Layout
+**Social-only**
+1. `social-cast` `context` → `hook` / `post` / `thread`
 
-```
-SKILL.md
-references/
-  clear-rubric.md
-  artifacts.md
-  evidence.md
-  craft.md
-  forms.md
-  ymyl.md
-LICENSE
-README.md
-NOTICE
-```
+## Provenance
 
-## Provenance & copyright
+See [NOTICE](NOTICE) for non-affiliation and how this suite differs from materials reviewed during design.
 
-- Frameworks named above are original to this repository.
-- Generic SEO/AEO practices (headings, sourcing, schema hygiene) are industry knowledge.
-- This repository does not copy skill text, rubrics, command trees, or delivery-contract language from third-party plugin codebases.
+Generic practices (cite sources, use headings, match platform norms) are industry craft. Named frameworks here (CLEAR, SPARK, SNAP, PULSE, ORBIT) and their artifacts are original to this repository.
 
 ## License
 
