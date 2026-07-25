@@ -7,7 +7,12 @@ MODE="${1:---all}"
 install_into() {
   local dest="$1"
   mkdir -p "$dest"
-  cp -R "$ROOT/skills/"* "$dest/"
+  # macOS: -X skips extended attributes (avoids sandbox / SIP copy noise)
+  if cp -RX "$ROOT/skills/." "$dest/" 2>/dev/null; then
+    :
+  else
+    cp -R "$ROOT/skills/." "$dest/"
+  fi
   echo "Installed Clearcast skills → $dest"
 }
 
