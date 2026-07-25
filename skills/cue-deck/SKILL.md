@@ -5,11 +5,14 @@ description: >-
   modes (When, Inputs, Prompt, Output, Risks). Use when the user wants a
   reusable prompt, strategy cue, or agent instruction for content work.
 license: MIT
+compatibility: Claude Code, Cursor, Cowork (Agent Skills)
 ---
 
 # Cue Deck
 
-Groundledger prompt cards. Every card that asks for facts inherits Grounding Law.
+Groundledger prompt cards. Every card that asks for facts inherits the
+[Grounding Law](../blog-engine/references/grounding.md) — a drawn card never
+licenses an unledgered number.
 
 ## Modes
 

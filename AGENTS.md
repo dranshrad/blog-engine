@@ -20,6 +20,18 @@ Site SEO recommendations must be PROBE-complete (`skills/site-signal/`).
 | Cursor | `~/.cursor/skills/` |
 | Cowork | per-skill zip upload |
 
+## Paths
+
+Cross-skill references must be sibling-relative: `../blog-engine/references/grounding.md`.
+Repo-root paths (`skills/blog-engine/...`) resolve here and break after install.
+
 ## Size
 
 Prefer SKILL.md under ~500 lines; put depth in `references/`.
+
+## Before committing
+
+```bash
+python3 scripts/validate.py     # structure, frontmatter, links, dual-layout paths
+python3 evals/check.py --lint   # eval fixtures well-formed
+```

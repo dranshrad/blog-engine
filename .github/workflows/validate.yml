@@ -1,0 +1,60 @@
+name: validate
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  structure:
+    name: Skill structure and link integrity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate skill structure
+        run: python3 scripts/validate.py
+
+      - name: Verify install layout is reachable
+        # Proves cross-skill paths resolve in the FLAT install layout too,
+        # not just in the repo layout. This is the check that would have
+        # caught the shipped `skills/blog-engine/...` path bug.
+        run: |
+          mkdir -p /tmp/flat
+          cp -R skills/. /tmp/flat/
+          python3 - <<'PY'
+          import pathlib, re, sys
+          root = pathlib.Path('/tmp/flat')
+          bad = []
+          for md in root.rglob('*.md'):
+              for m in re.finditer(r'\]\(([^)]+)\)', md.read_text()):
+                  t = m.group(1).split('#')[0].strip()
+                  if not t or t.startswith(('http://', 'https://', 'mailto:')):
+                      continue
+                  if not (md.parent / t).resolve().exists():
+                      bad.append(f'{md.relative_to(root)} -> {t}')
+          for b in bad:
+              print(f'  ERROR flat-layout broken link: {b}')
+          print(f'  {len(bad)} broken link(s) in flat install layout')
+          sys.exit(1 if bad else 0)
+          PY
+
+  evals:
+    name: Grounding eval fixtures
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Lint eval cases
+        # Checks the fixtures are well-formed. Scoring real model output is a
+        # separate, human/API-driven step — see evals/README.md.
+        run: python3 evals/check.py --lint

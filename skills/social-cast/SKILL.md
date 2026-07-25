@@ -6,6 +6,7 @@ description: >-
   Readout Deep, Format Signal Mine, Growth Action Stack, Audience Orbit. Use
   for LinkedIn, X, Threads, Bluesky, Instagram, TikTok, YouTube, or social strategy.
 license: MIT
+compatibility: Claude Code, Cursor, Cowork (Agent Skills)
 ---
 
 # Social Cast

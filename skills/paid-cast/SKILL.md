@@ -19,7 +19,7 @@ Groundledger paid acquisition desk. Complements `orbit-discovery` (organic surfa
 **Default: observe-only.** No platform mutations, no budget edits, no status flips
 unless **MutationLatch** is open.
 
-**Grounding:** `skills/blog-engine/references/grounding.md` — no invented ROAS,
+**Grounding:** `../blog-engine/references/grounding.md` — no invented ROAS,
 CPAs, or “industry benchmarks” without a cited source the user accepts.
 
 ## SAFE loop

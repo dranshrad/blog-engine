@@ -13,6 +13,12 @@ Brand: https://dranshrad.github.io/groundledger/brand.md
 
 - https://github.com/dranshrad/groundledger/blob/master/skills/blog-engine/references/grounding.md
 
+## Primitives (domain-neutral, reusable outside content work)
+
+- primitives/grounding-law.md
+- primitives/falsifiability-contract.md
+- primitives/write-gate.md
+
 ## Skills
 
 - skills/groundledger/SKILL.md

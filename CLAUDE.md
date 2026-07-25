@@ -35,6 +35,16 @@ This repository is the **Groundledger** skill suite for grounded content work on
 - Cursor: `~/.cursor/skills/<name>/`
 - Cowork: upload each skill directory / release zip per client UI
 
+## Repo invariants (enforced by `scripts/validate.py`)
+
+- Cross-skill paths are **sibling-relative** (`../blog-engine/...`), never
+  `skills/blog-engine/...` — skills install flat, with no `skills/` parent.
+- Every skill's frontmatter carries `name` (= directory name), `description`,
+  `license`, `compatibility`.
+- Every skill reaches the Grounding Law; `SKILL.md` stays under 500 lines.
+- Run `python3 scripts/validate.py` before committing. CI runs it plus a
+  flat-install link check and `evals/check.py --lint`.
+
 ## Composition defaults
 
 Content: `orbit-discovery` → `blog-engine` → `editorial-pass` → `social-cast` → `studio-desk` ship  

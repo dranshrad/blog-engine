@@ -15,19 +15,19 @@ compatibility: Claude Code, Cursor, Cowork (Agent Skills)
 Route across eight skills. Obey Grounding Law before any “final” delivery.
 
 **Grounding (mandatory):** load
-`skills/blog-engine/references/grounding.md` — never invent statistics, studies,
+`../blog-engine/references/grounding.md` — never invent statistics, studies,
 quotes, rankings, ROAS, or customer results.
 
 | Need | Load |
 |------|------|
-| Long-form, page SEO scan, citation, clusters, locales, release | `skills/blog-engine/SKILL.md` |
-| Multi-pass polish, tone retarget, voice canon | `skills/editorial-pass/SKILL.md` |
-| Hooks, posts, atomize, calendars, social analytics | `skills/social-cast/SKILL.md` |
-| Surfaces, Echo Map, Close Path, Path Cards, Provenance | `skills/orbit-discovery/SKILL.md` |
-| Site SEO audit, Health Dial, page-fit, drift, local, adapters | `skills/site-signal/SKILL.md` |
-| Paid media audit/plan; MutationLatch for draft changes only | `skills/paid-cast/SKILL.md` |
-| Workspace boot, versions, export, ship gate | `skills/studio-desk/SKILL.md` |
-| Reusable prompt cards | `skills/cue-deck/SKILL.md` |
+| Long-form, page SEO scan, citation, clusters, locales, release | `../blog-engine/SKILL.md` |
+| Multi-pass polish, tone retarget, voice canon | `../editorial-pass/SKILL.md` |
+| Hooks, posts, atomize, calendars, social analytics | `../social-cast/SKILL.md` |
+| Surfaces, Echo Map, Close Path, Path Cards, Provenance | `../orbit-discovery/SKILL.md` |
+| Site SEO audit, Health Dial, page-fit, drift, local, adapters | `../site-signal/SKILL.md` |
+| Paid media audit/plan; MutationLatch for draft changes only | `../paid-cast/SKILL.md` |
+| Workspace boot, versions, export, ship gate | `../studio-desk/SKILL.md` |
+| Reusable prompt cards | `../cue-deck/SKILL.md` |
 
 ## Routing
 

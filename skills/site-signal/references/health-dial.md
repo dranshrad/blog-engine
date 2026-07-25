@@ -16,6 +16,11 @@ Composite 0–100 score for Groundledger Site Signal audits. Every axis needs **
 
 Sum of awarded points = dial. Report **coverage** = (axes with real evidence) / 7.
 
+**Always report the dial with its coverage.** A 78 at 3/7 coverage and a 78 at
+7/7 coverage are not the same finding, and the number alone hides which one it
+is. Never present a dial score without coverage attached, and never compare two
+sites' dials measured at different coverage.
+
 ## Industry remaps (after user confirm)
 
 | Industry | Bias |

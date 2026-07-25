@@ -6,11 +6,16 @@ description: >-
   Pack, Ship Gate, Collection Index. Use when scaffolding a writing workspace,
   versioning drafts, exporting, or preparing CMS handoff.
 license: MIT
+compatibility: Claude Code, Cursor, Cowork (Agent Skills)
 ---
 
 # Studio Desk
 
 Groundledger workspace and publishing-ops skill.
+
+**Grounding:** [Grounding Law](../blog-engine/references/grounding.md) is binding at
+`ship`. Do not pass Ship Gate while any claim-ledger row is `blocked`, or while a
+paid change pack claims writes that no approved MutationLatch authorised.
 
 ## Modes
 

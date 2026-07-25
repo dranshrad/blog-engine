@@ -2,6 +2,24 @@
 
 Original scoring model for this skill. Not a Google ranking factor.
 
+## What this score is, and is not
+
+The model that drafts the article is usually the model that scores it. A CLEAR
+total is therefore **a structured self-assessment, not a measurement** — it is
+the same system grading its own output against a checklist it was given.
+
+That is still worth doing: a rubric makes the model look for specific failure
+classes (unledgered claims, intent impurity, non-extractable passages) it would
+otherwise glide past, and the blocking failures below are genuine refusal
+conditions rather than points. But treat the number accordingly.
+
+- Do **not** publish a CLEAR score as evidence of quality to a client or reader.
+- Do **not** compare CLEAR totals across articles as if they were calibrated.
+- **Do** read the blocking-failure list and the claim ledger — those carry the
+  real signal.
+- For an independent read, have a *different* session score the draft cold,
+  without the drafting context. Divergence between the two is the useful datum.
+
 ## C — Claim integrity (25)
 
 | Check | Pts | Pass |

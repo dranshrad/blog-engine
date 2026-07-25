@@ -6,6 +6,7 @@ description: >-
   Shelf, Signal Field, and Path Cards. Use for strategy, clusters, SEO surface
   choice, conversion pages, local signals, or off-site corroboration.
 license: MIT
+compatibility: Claude Code, Cursor, Cowork (Agent Skills)
 ---
 
 # Orbit Discovery
@@ -15,7 +16,7 @@ Observe → Reinforce → Build → Instrument → Transmit → (repeat)
 ```
 
 Groundledger discovery loop. Strategy language stays qualitative unless a number
-is ledgered under Grounding Law (`blog-engine/references/grounding.md`).
+is ledgered under Grounding Law (`../blog-engine/references/grounding.md`).
 
 ## Modes
 

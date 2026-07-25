@@ -15,7 +15,7 @@ compatibility: Claude Code, Cursor, Cowork (Agent Skills)
 Groundledger SEO operations for owned sites. Complements `blog-engine` (pages) and
 `orbit-discovery` (surfaces). Does **not** invent rankings, traffic, or link metrics.
 
-**Grounding:** `skills/blog-engine/references/grounding.md` — no fabricated
+**Grounding:** `../blog-engine/references/grounding.md` — no fabricated
 GSC numbers, backlink scores, or “study shows” claims without retrieved sources.
 
 ## PROBE recommendation contract

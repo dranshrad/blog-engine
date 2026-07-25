@@ -9,6 +9,12 @@
 
 Formerly Clearcast; renamed to Groundledger. Not affiliated with Clearcast UK or other ClearCast apps.
 
+## Primitives (domain-neutral, reusable outside content work)
+
+- primitives/grounding-law.md
+- primitives/falsifiability-contract.md
+- primitives/write-gate.md
+
 ## Skills
 
 - https://github.com/dranshrad/groundledger/tree/master/skills/groundledger

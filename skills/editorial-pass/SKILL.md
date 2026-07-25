@@ -6,13 +6,14 @@ description: >-
   invents facts. Use when polishing drafts, retargeting tone, or building a
   style guide from samples.
 license: MIT
+compatibility: Claude Code, Cursor, Cowork (Agent Skills)
 ---
 
 # Editorial Pass (SPARK Chain)
 
 Groundledger multi-pass editor. Locale is user-chosen (never forced).
 
-**Core laws:** preserve author voice · obey Grounding Law (`blog-engine/references/grounding.md`) — fact freeze means no new invented claims.
+**Core laws:** preserve author voice · obey Grounding Law (`../blog-engine/references/grounding.md`) — fact freeze means no new invented claims.
 
 ## Modes
 

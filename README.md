@@ -86,6 +86,29 @@ Full rules: [skills/blog-engine/references/grounding.md](skills/blog-engine/refe
 **Paid:** `paid-cast` `audit` (observe-only) → `trial` / `math` → latch-gated `optimize-draft` only with approval  
 
 
+## Primitives (domain-neutral)
+
+Three patterns here solve general agent-safety problems and transfer outside content work — copy them into any project:
+
+| Primitive | Solves |
+|-----------|--------|
+| [grounding-law](primitives/grounding-law.md) | Fluent, confident, unsupported claims |
+| [falsifiability-contract](primitives/falsifiability-contract.md) | Recommendations that cannot be checked |
+| [write-gate](primitives/write-gate.md) | Irreversible actions, and false completion reports |
+
+See [primitives/](primitives/).
+
+## Evals
+
+Adversarial fixtures that test the behavioural claim — bait prompts where fabricating is the path of least resistance:
+
+```bash
+python3 evals/check.py --lint                    # validate fixtures
+python3 evals/check.py CASE.md reply.md          # score a saved reply
+```
+
+See [evals/README.md](evals/README.md). Structure and link integrity are checked by `python3 scripts/validate.py` (also runs in CI).
+
 ## Related repositories
 
 | Project | Link |
