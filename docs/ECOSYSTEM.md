@@ -1,9 +1,4 @@
----
-layout: default
-title: Clearcast ecosystem and sister repositories
----
-
-# Ecosystem
+# Clearcast ecosystem and sister repositories
 
 Clearcast (MIT) is the content skill suite. These **related public repositories** by the same author solve adjacent problems. They are **not** bundled into Clearcast and keep their own licenses (often AGPL-3.0).
 
@@ -27,3 +22,5 @@ Clearcast (MIT) is the content skill suite. These **related public repositories*
 ## License reminder
 
 Linking ≠ relicensing. Use each repo under its LICENSE file.
+
+[← Home](index.html)

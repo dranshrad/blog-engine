@@ -1,8 +1,3 @@
----
-layout: default
-title: Clearcast coverage ledger — source ideas mapped
----
-
 # Coverage ledger
 
 Maps **capability ideas** reviewed from four public landscapes to **Clearcast-native** features. No third-party text was copied; names below are Clearcast’s.
@@ -86,4 +81,7 @@ Status: `mapped` = present in this repo.
 
 ## Explicitly not ported (by design)
 
-Vendor MCP farms, proprietary installers, NotebookLM automation, hardcoded Google API suites, and CC-licensed third-party doc corpora. Ideas covered via tool-agnostic briefs (Signal Bridge, Frame & Tone, Source Desk notes in Signal Field).
+Vendor MCP farms, proprietary installers, NotebookLM automation, hardcoded Google API suites, and CC-licensed third-party doc corpora. Ideas covered via tool-agnostic briefs (Signal Bridge, Frame & Tone, Signal Field).
+
+[← Home](index.html)
+

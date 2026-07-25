@@ -1,9 +1,4 @@
----
-layout: default
-title: Clearcast frameworks — CLEAR SPARK ORBIT SNAP
----
-
-# Frameworks
+# Clearcast frameworks — CLEAR SPARK ORBIT SNAP
 
 ## CLEAR (blog-engine)
 
@@ -24,3 +19,5 @@ Observe → Reinforce → Build → Instrument → Transmit across search, AI an
 ## Studio Desk / Cue Deck
 
 Ops + reusable prompt cards keyed to the loops above.
+
+[← Home](index.html)

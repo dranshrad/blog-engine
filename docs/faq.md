@@ -1,9 +1,4 @@
----
-layout: default
-title: Clearcast FAQ — Cursor blog SEO and social skills
----
-
-# FAQ
+# Clearcast FAQ — Cursor blog SEO and social skills
 
 ### What is Clearcast?
 A MIT-licensed suite of Cursor agent skills for blog SEO/AEO, editorial passes, social content, and multi-surface discovery.
@@ -19,3 +14,5 @@ See [Getting started](getting-started.md).
 
 ### Where are the sister tools?
 [ECOSYSTEM.md](ECOSYSTEM.md) — voice notes, CST refactorer, self-correction loop, audio gateway.
+
+[← Home](index.html)

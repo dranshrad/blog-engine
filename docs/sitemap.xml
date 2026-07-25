@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://dranshrad.github.io/clearcast/</loc></url>
-  <url><loc>https://dranshrad.github.io/clearcast/getting-started.html</loc></url>
-  <url><loc>https://dranshrad.github.io/clearcast/frameworks.html</loc></url>
-  <url><loc>https://dranshrad.github.io/clearcast/ECOSYSTEM.html</loc></url>
-  <url><loc>https://dranshrad.github.io/clearcast/COVERAGE.html</loc></url>
-  <url><loc>https://dranshrad.github.io/clearcast/faq.html</loc></url>
+  <url><loc>https://dranshrad.github.io/clearcast/index.html</loc></url>
+  <url><loc>https://dranshrad.github.io/clearcast/getting-started.md</loc></url>
+  <url><loc>https://dranshrad.github.io/clearcast/frameworks.md</loc></url>
+  <url><loc>https://dranshrad.github.io/clearcast/ECOSYSTEM.md</loc></url>
+  <url><loc>https://dranshrad.github.io/clearcast/COVERAGE.md</loc></url>
+  <url><loc>https://dranshrad.github.io/clearcast/faq.md</loc></url>
   <url><loc>https://github.com/dranshrad/clearcast</loc></url>
 </urlset>

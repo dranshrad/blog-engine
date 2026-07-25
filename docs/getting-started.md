@@ -1,9 +1,4 @@
----
-layout: default
-title: Getting started with Clearcast
----
-
-# Getting started
+# Getting started with Clearcast
 
 ## 1. Install
 
@@ -27,3 +22,5 @@ In your project root: `VOICE.md`, `BRAND.md`, `CAST.md`, `ORBIT.md`, `STUDIO.md`
 ## 4. Cue Deck
 
 “Draw cue C-draft from clearcast cue-deck.”
+
+[← Home](index.html) · [Ecosystem](ECOSYSTEM.md) · [Coverage](COVERAGE.md)
