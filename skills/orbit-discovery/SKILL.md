@@ -106,4 +106,4 @@ No unsourced public statistics. Prefer qualitative strategy over fake benchmarks
 
 ## Sister tools
 
-Strategy notes from voice: [voice-notes-to-anthropic-artifacts](https://github.com/dranshrad/voice-notes-to-anthropic-artifacts). Hub: [docs/ECOSYSTEM.md](../../docs/ECOSYSTEM.md).
+Strategy notes from voice: [voice-notes-to-anthropic-artifacts](https://github.com/dranshrad/voice-notes-to-anthropic-artifacts). Hub: [docs/ECOSYSTEM.md](https://github.com/dranshrad/groundledger/blob/master/docs/ECOSYSTEM.md).

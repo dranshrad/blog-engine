@@ -137,7 +137,7 @@ See [references/ymyl.md](references/ymyl.md).
 
 - Voice drafts: [voice-notes-to-anthropic-artifacts](https://github.com/dranshrad/voice-notes-to-anthropic-artifacts)
 - Self-heal loops (code parallel): [automated-self-correction-loop](https://github.com/dranshrad/automated-self-correction-loop)
-- Suite hub: [docs/ECOSYSTEM.md](../../docs/ECOSYSTEM.md)
+- Suite hub: [docs/ECOSYSTEM.md](https://github.com/dranshrad/groundledger/blob/master/docs/ECOSYSTEM.md)
 
 ## Progressive disclosure
 

@@ -127,7 +127,25 @@ def main() -> int:
             if not (md.parent / target).resolve().exists():
                 err(f"{md.relative_to(ROOT)}: broken link -> {target}")
 
-    # 9 — the router must be able to reach every specialist
+    # 9 — flat-install layout: skills ship WITHOUT the repo around them, so any
+    # link escaping the skill root (../../docs/...) dangles on every machine.
+    # This is the same defect class as check 5 in a different shape.
+    import shutil, tempfile
+    with tempfile.TemporaryDirectory() as tmp:
+        flat = Path(tmp) / "skills"
+        shutil.copytree(SKILLS, flat)
+        for md in flat.rglob("*.md"):
+            for m in re.finditer(r"\]\(([^)]+)\)", md.read_text()):
+                target = m.group(1).split("#")[0].strip()
+                if not target or target.startswith(("http://", "https://", "mailto:")):
+                    continue
+                if not (md.parent / target).resolve().exists():
+                    err(
+                        f"{md.relative_to(flat)}: link `{target}` dangles in flat install "
+                        f"— escapes the skill root; use an absolute URL"
+                    )
+
+    # 10 — the router must be able to reach every specialist
     router = SKILLS / "groundledger" / "SKILL.md"
     if router.exists():
         rt = router.read_text()

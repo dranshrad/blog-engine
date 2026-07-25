@@ -100,4 +100,4 @@ Follower/subscriber trend sketch: inflow drivers, outflow risks, content that co
 - Polish → `editorial-pass`  
 - Surface strategy → `orbit-discovery`  
 - Voice notes → [voice-notes-to-anthropic-artifacts](https://github.com/dranshrad/voice-notes-to-anthropic-artifacts)  
-- Ecosystem → [docs/ECOSYSTEM.md](../../docs/ECOSYSTEM.md)
+- Ecosystem → [docs/ECOSYSTEM.md](https://github.com/dranshrad/groundledger/blob/master/docs/ECOSYSTEM.md)
