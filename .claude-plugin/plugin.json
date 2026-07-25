@@ -1,0 +1,24 @@
+{
+  "name": "clearcast",
+  "description": "Clearcast agent-skill suite for publish-ready blogging (CLEAR), multi-pass editorial refinement (SPARK), social casting (SNAP/PULSE), multi-surface discovery (ORBIT), Studio Desk ops, and Cue Deck prompts. Grounded writing with claim ledgers; no fabricated statistics.",
+  "version": "1.1.0",
+  "author": {
+    "name": "Divyansh Gupta",
+    "url": "https://github.com/dranshrad"
+  },
+  "homepage": "https://github.com/dranshrad/clearcast",
+  "repository": "https://github.com/dranshrad/clearcast",
+  "license": "MIT",
+  "keywords": [
+    "blog",
+    "seo",
+    "aeo",
+    "geo",
+    "content",
+    "writing",
+    "social-media",
+    "editorial",
+    "clearcast",
+    "skills"
+  ]
+}

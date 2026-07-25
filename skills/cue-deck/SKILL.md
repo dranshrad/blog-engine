@@ -9,7 +9,7 @@ license: MIT
 
 # Cue Deck
 
-Original Clearcast prompt cards. Not a copy of any third-party prompt library.
+Clearcast prompt cards. Every card that asks for facts inherits Grounding Law.
 
 ## Modes
 

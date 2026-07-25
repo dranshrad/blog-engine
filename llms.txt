@@ -1,28 +1,32 @@
 # Clearcast
 
-> Cursor agent skills for CLEAR blog publishing, SPARK editorial passes, SNAP/PULSE social casting, ORBIT multi-surface discovery, Studio Desk ops, and Cue Deck prompts.
+> Agent skills for Claude Code, Cursor, and Cowork: CLEAR blog publishing, SPARK editorial, SNAP/PULSE social casting, ORBIT discovery, Studio Desk, Cue Deck. Grounded writing — no fabricated statistics.
 
-MIT License. Canonical repo: https://github.com/dranshrad/clearcast
-Docs site: https://dranshrad.github.io/clearcast/
+MIT License. https://github.com/dranshrad/clearcast
+Docs: https://dranshrad.github.io/clearcast/
+
+## Grounding
+
+- https://github.com/dranshrad/clearcast/blob/master/skills/blog-engine/references/grounding.md
 
 ## Skills
 
-- skills/clearcast/SKILL.md — orchestrator
-- skills/blog-engine/SKILL.md — CLEAR long-form + SEO/AEO modes
-- skills/editorial-pass/SKILL.md — SPARK + voice canon
-- skills/social-cast/SKILL.md — social creation + analytics
-- skills/orbit-discovery/SKILL.md — ORBIT strategy
-- skills/studio-desk/SKILL.md — workspace ops
-- skills/cue-deck/SKILL.md — prompt cards
+- skills/clearcast/SKILL.md
+- skills/blog-engine/SKILL.md
+- skills/editorial-pass/SKILL.md
+- skills/social-cast/SKILL.md
+- skills/orbit-discovery/SKILL.md
+- skills/studio-desk/SKILL.md
+- skills/cue-deck/SKILL.md
 
 ## Docs
 
 - https://dranshrad.github.io/clearcast/
-- https://dranshrad.github.io/clearcast/getting-started.html
-- https://dranshrad.github.io/clearcast/frameworks.html
-- https://dranshrad.github.io/clearcast/ECOSYSTEM.html
-- https://dranshrad.github.io/clearcast/COVERAGE.html
-- https://dranshrad.github.io/clearcast/faq.html
+- https://dranshrad.github.io/clearcast/getting-started.md
+- https://dranshrad.github.io/clearcast/frameworks.md
+- https://dranshrad.github.io/clearcast/ECOSYSTEM.md
+- https://dranshrad.github.io/clearcast/COVERAGE.md
+- https://dranshrad.github.io/clearcast/faq.md
 
 ## Sister repositories
 

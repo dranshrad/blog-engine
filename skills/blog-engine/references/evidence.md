@@ -1,6 +1,8 @@
 # Evidence Discipline
 
-## Source preference (not a cloned “tier table”)
+Also read [grounding.md](grounding.md) — it wins on conflicts.
+
+## Source preference
 
 Rank evidence by **support strength for this claim**:
 

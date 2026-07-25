@@ -10,9 +10,9 @@ license: MIT
 
 # Editorial Pass (SPARK Chain)
 
-Original Clearcast multi-pass editor. Not a forced-UK writing-squad port.
+Clearcast multi-pass editor. Locale is user-chosen (never forced).
 
-**Core law:** preserve author voice.
+**Core laws:** preserve author voice · obey Grounding Law (`blog-engine/references/grounding.md`) — fact freeze means no new invented claims.
 
 ## Modes
 

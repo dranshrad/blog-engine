@@ -2,18 +2,22 @@
 name: blog-engine
 description: >-
   Clearcast long-form skill: CLEAR rubric, claim ledgers, adversarial Q-tests,
-  YMYL, Ship Scan, Cite Surface Audit, Freshness Drift, Graph Runner, Locale
-  Lattice, and Release Latch. Use for blog drafts, rewrites, SEO audits,
-  citation checks, clusters, multilingual plans, or publish readiness.
+  grounding law (no fabricated stats), YMYL, Ship Scan, Cite Surface Audit,
+  Freshness Drift, Graph Runner, Locale Lattice, Release Latch. Use for blog
+  drafts, rewrites, SEO audits, citation checks, clusters, multilingual plans,
+  or publish readiness on Claude Code, Cursor, or Cowork.
 license: MIT
+compatibility: Claude Code, Cursor, Cowork (Agent Skills)
 ---
 
 # Blog Engine (CLEAR Editorial System)
 
-Original Clearcast long-form skill. Not a port of any third-party blog plugin.
+Clearcast long-form skill for grounded, publish-ready articles.
 
 **Ship rule:** CLEAR ≥ 85, claim ledger clean, Q-tests pass, residual risk
-accepted, and (when requested) Ship Scan + Release Latch green.
+accepted, Grounding Law satisfied, and (when requested) Ship Scan + Release Latch green.
+
+**Grounding Law:** [references/grounding.md](references/grounding.md) — binding.
 
 ## Modes
 
@@ -139,6 +143,7 @@ See [references/ymyl.md](references/ymyl.md).
 
 | File | When |
 |------|------|
+| [grounding.md](references/grounding.md) | Anti-hallucination (always) |
 | [clear-rubric.md](references/clear-rubric.md) | Scoring |
 | [artifacts.md](references/artifacts.md) | Ledgers / Q-tests |
 | [evidence.md](references/evidence.md) | Sourcing |
@@ -152,7 +157,3 @@ See [references/ymyl.md](references/ymyl.md).
 | [signal-bridge.md](references/signal-bridge.md) | Analytics adapters |
 | [release-latch.md](references/release-latch.md) | Packaging |
 | [ymyl.md](references/ymyl.md) | High-stakes |
-
-## Provenance
-
-Copyright (c) 2026 Divyansh Gupta. MIT. CLEAR and listed modes are original to Clearcast.

@@ -1,0 +1,18 @@
+{
+  "name": "clearcast-marketplace",
+  "owner": {
+    "name": "Divyansh Gupta",
+    "url": "https://github.com/dranshrad"
+  },
+  "metadata": {
+    "description": "Clearcast — grounded content skills for Claude Code and compatible agents",
+    "version": "1.1.0"
+  },
+  "plugins": [
+    {
+      "name": "clearcast",
+      "source": "./",
+      "description": "CLEAR blog engine, SPARK editorial, SNAP social, ORBIT discovery, Studio Desk, Cue Deck"
+    }
+  ]
+}

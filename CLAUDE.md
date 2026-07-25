@@ -1,0 +1,38 @@
+# Clearcast — Agent Project Instructions
+
+This repository is the **Clearcast** skill suite for grounded content work on Claude Code, Cursor, and compatible agents (including Cowork skill uploads).
+
+## Load order
+
+1. Read `skills/clearcast/SKILL.md` for routing.
+2. Load only the skill needed for the task.
+3. Always obey `skills/blog-engine/references/grounding.md` (anti-hallucination).
+
+## Non-negotiables
+
+- Never invent statistics, studies, quotes, or customer results.
+- Material claims need a claim-ledger row (`verified` / `attributed` / `author-supplied`).
+- Prefer omitting a number over fabricating one.
+- Do not present drafts as final while ledger rows are `blocked`.
+
+## Skill map
+
+| Directory | Framework |
+|-----------|-----------|
+| `skills/clearcast/` | Router |
+| `skills/blog-engine/` | CLEAR |
+| `skills/editorial-pass/` | SPARK |
+| `skills/social-cast/` | SNAP + PULSE |
+| `skills/orbit-discovery/` | ORBIT |
+| `skills/studio-desk/` | Workspace ops |
+| `skills/cue-deck/` | Prompt cards |
+
+## Install targets
+
+- Claude Code: `~/.claude/skills/<name>/` (or plugin install from this repo)
+- Cursor: `~/.cursor/skills/<name>/`
+- Cowork: upload each skill directory / release zip per client UI
+
+## Composition default
+
+`orbit-discovery` → `blog-engine` → `editorial-pass` → `social-cast` → `studio-desk` ship

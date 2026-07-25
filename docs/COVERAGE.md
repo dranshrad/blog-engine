@@ -1,22 +1,21 @@
 # Coverage ledger
 
-Maps **capability ideas** reviewed from four public landscapes to **Clearcast-native** features. No third-party text was copied; names below are Clearcast’s.
+Maps generic content-ops capabilities to **Clearcast-native** features. Status `mapped` = present in this repository.
 
-Status: `mapped` = present in this repo.
+## Long-form / SEO / AEO
 
-## Long-form / blog landscape → Clearcast
-
-| Idea (generic) | Clearcast feature | Status |
-|----------------|-------------------|--------|
+| Capability | Clearcast feature | Status |
+|------------|-------------------|--------|
 | Draft / rewrite | blog-engine `draft` / `improve` | mapped |
 | Quality score | CLEAR rubric | mapped |
 | Evidence tracking | Claim ledger + Claim Probe+ | mapped |
-| AI Q extractability | cite-probe + Cite Surface Audit | mapped |
+| Anti-hallucination rules | Grounding Law | mapped |
+| AI extractability | cite-probe + Cite Surface Audit | mapped |
 | SEO checklist / audit | Ship Scan | mapped |
-| Cannibalization | Job Collision Map | mapped |
+| Overlapping URL jobs | Job Collision Map | mapped |
 | Content decay / refresh | Freshness Drift | mapped |
-| Schema | Mirror Markup | mapped |
-| Templates / forms | Spine Picker + forms.md | mapped |
+| Schema from visible content | Mirror Markup | mapped |
+| Content forms | Spine Picker + forms.md | mapped |
 | Strategy roadmap | Horizon Brief | mapped |
 | Topic clusters | cluster + Graph Runner | mapped |
 | Multilingual | Locale Lattice | mapped |
@@ -24,17 +23,17 @@ Status: `mapped` = present in this repo.
 | Analytics adapters | Signal Bridge | mapped |
 | Delivery packaging | Release Latch | mapped |
 | YMYL | ymyl intensifier | mapped |
-| Brand / voice files | VOICE.md / BRAND.md + Voice Canon | mapped |
+| Brand / voice files | VOICE.md + Voice Canon | mapped |
 | Discourse research | Signal Field | mapped |
-| Personas / style learn | Voice Specimens → Mine → Canon | mapped |
+| Style induction | Voice Specimens → Mine → Canon | mapped |
 | Factcheck | verify / Claim Probe+ | mapped |
 | Calendar | blog-engine calendar + social PULSE | mapped |
 | Repurpose | adapt + social-cast atomize | mapped |
 
-## Editorial / workspace landscape → Clearcast
+## Editorial / workspace
 
-| Idea (generic) | Clearcast feature | Status |
-|----------------|-------------------|--------|
+| Capability | Clearcast feature | Status |
+|------------|-------------------|--------|
 | Multi-pass edit | SPARK | mapped |
 | Tone retarget | Tone Retarget | mapped |
 | Locale pass | Locale Lock | mapped |
@@ -43,14 +42,13 @@ Status: `mapped` = present in this repo.
 | Status | Cast Desk Status | mapped |
 | Export | Export Pack | mapped |
 | Publish handoff | Ship Gate | mapped |
-| Style guide induction | Voice Canon pipeline | mapped |
 | Workspace scaffold | Workspace Boot + studios | mapped |
 | Collection TOC | Collection Index | mapped |
 
-## Social landscape → Clearcast
+## Social
 
-| Idea (generic) | Clearcast feature | Status |
-|----------------|-------------------|--------|
+| Capability | Clearcast feature | Status |
+|------------|-------------------|--------|
 | Context file | CAST.md / context | mapped |
 | Strategy | Cast Strategy Brief | mapped |
 | Platform strategy | Surface Playbook | mapped |
@@ -62,26 +60,29 @@ Status: `mapped` = present in this repo.
 | Optimization plan | Growth Action Stack | mapped |
 | Audience growth | Audience Orbit | mapped |
 
-## Multi-surface discovery landscape → Clearcast
+## Multi-surface discovery
 
-| Idea (generic) | Clearcast feature | Status |
-|----------------|-------------------|--------|
+| Capability | Clearcast feature | Status |
+|------------|-------------------|--------|
 | Operating loop | ORBIT | mapped |
 | Stage diagnose | Stage Triage | mapped |
-| Surface map / bet | Surface Bet Card | mapped |
+| Surface bet | Surface Bet Card | mapped |
 | Off-site presence | Echo Map | mapped |
 | Conversion / BOFU | Close Path | mapped |
 | Query fan-out | Question Spray | mapped |
 | Entity consistency | Entity Concord | mapped |
 | Local / profiles | Place Signal | mapped |
-| Dual / extended score | Dual scorecard + Orbit Dial | mapped |
-| Provenance / bibliography | Provenance Shelf | mapped |
+| Extended score | Dual scorecard + Orbit Dial | mapped |
+| Provenance registry | Provenance Shelf | mapped |
 | Playbooks | Path Cards | mapped |
 | Prompt library | Cue Deck | mapped |
 
-## Explicitly not ported (by design)
+## Client install surfaces
 
-Vendor MCP farms, proprietary installers, NotebookLM automation, hardcoded Google API suites, and CC-licensed third-party doc corpora. Ideas covered via tool-agnostic briefs (Signal Bridge, Frame & Tone, Signal Field).
+| Client | Path | Status |
+|--------|------|--------|
+| Claude Code | `~/.claude/skills/` + plugin manifest | mapped |
+| Cursor | `~/.cursor/skills/` | mapped |
+| Cowork | per-skill zip upload | mapped |
 
 [← Home](index.html)
-

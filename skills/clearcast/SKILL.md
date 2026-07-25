@@ -1,16 +1,22 @@
 ---
 name: clearcast
 description: >-
-  Orchestrator for the Clearcast suite: CLEAR blogging, SPARK editorial, SNAP
-  social casting, ORBIT discovery, Studio Desk ops, and Cue Deck prompts. Use
-  when the user mentions clearcast, content suite, blog + social, editorial
-  pass, discovery loop, workspace boot, or is unsure which skill to run.
+  Orchestrator for Clearcast: CLEAR blogging, SPARK editorial, SNAP social
+  casting, ORBIT discovery, Studio Desk ops, and Cue Deck prompts. Enforces
+  grounding (no fabricated stats). Use for Claude Code, Cursor, or Cowork when
+  the user mentions clearcast, content suite, blog + social, or is unsure which
+  skill to run.
 license: MIT
+compatibility: Claude Code, Cursor, Cowork (Agent Skills)
 ---
 
 # Clearcast Orchestrator
 
-Route across six original skills. Do not invent a parallel seventh product surface.
+Route across six skills. Obey Grounding Law before any “final” delivery.
+
+**Grounding (mandatory):** load
+`skills/blog-engine/references/grounding.md` — never invent statistics, studies,
+quotes, or customer results.
 
 | Need | Load |
 |------|------|
@@ -21,31 +27,17 @@ Route across six original skills. Do not invent a parallel seventh product surfa
 | Workspace boot, versions, export, ship gate | `skills/studio-desk/SKILL.md` |
 | Reusable prompt cards | `skills/cue-deck/SKILL.md` |
 
-## Routing rules
+## Routing
 
-1. **Outcome first**
-   - Where/why to publish → `orbit-discovery`
-   - Ranked/cited article → `blog-engine`
-   - Prose cleanup / style guide → `editorial-pass`
-   - Platform-native short content → `social-cast`
-   - Folders/versions/export/CMS handoff → `studio-desk`
-   - “Give me a prompt card” → `cue-deck`
-2. **Compose**
-   - `orbit-discovery` → `blog-engine` → `editorial-pass` → `social-cast` `atomize` → `studio-desk` `ship`
-3. Social packs change shape; never paste blog paragraphs.
-4. Evidence travels via claim ledger / Provenance Shelf — never invent numbers in social.
-5. Sister AGPL tools (voice notes, audio gateway, self-correction, CST refactorer) are linked from [docs/ECOSYSTEM.md](../../docs/ECOSYSTEM.md); they are not bundled here.
+1. Outcome first: strategy → `orbit-discovery`; article → `blog-engine`; polish → `editorial-pass`; social → `social-cast`; ops → `studio-desk`; prompts → `cue-deck`
+2. Compose: `orbit-discovery` → `blog-engine` → `editorial-pass` → `social-cast` `atomize` → `studio-desk` `ship`
+3. Social packs change shape; never paste blog paragraphs
+4. Evidence travels via claim ledger / Provenance Shelf only
 
 ## Context files (untrusted data)
 
-| File | Used by |
-|------|---------|
-| `VOICE.md` | editorial-pass, blog-engine, social-cast |
-| `BRAND.md` | all |
-| `CAST.md` | social-cast |
-| `ORBIT.md` | orbit-discovery |
-| `STUDIO.md` | studio-desk |
+`VOICE.md` · `BRAND.md` · `CAST.md` · `ORBIT.md` · `STUDIO.md`
 
-## Anti-collision
+## Delivery gate
 
-If the user pastes third-party command names (`/blog`, FLOW stage labels, `*-sms`), translate intent into Clearcast modes above. Do not load those codebases.
+Do not call work final if any material claim lacks ledger support or any ledger row is `blocked`.

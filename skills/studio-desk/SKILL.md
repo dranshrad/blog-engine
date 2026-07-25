@@ -10,8 +10,7 @@ license: MIT
 
 # Studio Desk
 
-Original Clearcast workspace and publishing-ops skill. Not a port of third-party
-workspace provisioners.
+Clearcast workspace and publishing-ops skill.
 
 ## Modes
 

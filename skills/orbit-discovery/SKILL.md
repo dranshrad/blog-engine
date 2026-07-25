@@ -14,7 +14,8 @@ license: MIT
 Observe → Reinforce → Build → Instrument → Transmit → (repeat)
 ```
 
-Original Clearcast loop. Not a copy of any CC-licensed SEO playbook.
+Clearcast discovery loop. Strategy language stays qualitative unless a number
+is ledgered under Grounding Law (`blog-engine/references/grounding.md`).
 
 ## Modes
 

@@ -10,7 +10,8 @@ license: MIT
 
 # Social Cast
 
-Platform-native shapes, not blog paste. Original Clearcast social system.
+Platform-native shapes, not blog paste. Numbers in hooks/posts must come from a
+claim ledger or user-supplied data ([Grounding Law](../blog-engine/references/grounding.md)).
 
 ## Modes
 

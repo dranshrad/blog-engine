@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Clearcast — Cursor Agent Skills for Blog SEO, AEO, Social Content &amp; Discovery</title>
-  <meta name="description" content="Clearcast is an MIT suite of Cursor agent skills for publish-ready blogging, SEO and AEO citation readiness, SPARK editorial passes, social content calendars, and ORBIT multi-surface discovery.">
-  <meta name="keywords" content="Clearcast, Cursor skills, blog SEO, AEO, GEO, content marketing, social media calendar, editorial pipeline, agent skills">
+  <title>Clearcast — Agent Skills for Blog SEO, AEO, Social Content &amp; Discovery</title>
+  <meta name="description" content="Clearcast is an MIT suite of agent skills for Claude Code, Cursor, and Cowork: publish-ready blogging, SEO and AEO readiness, SPARK editorial passes, social calendars, and ORBIT discovery — with a hard ban on fabricated statistics.">
+  <meta name="keywords" content="Clearcast, Claude Code skills, Cursor skills, Cowork skills, blog SEO, AEO, GEO, content marketing, social media, editorial">
   <link rel="canonical" href="https://dranshrad.github.io/clearcast/">
-  <meta property="og:title" content="Clearcast — Cursor skills for blog SEO, AEO &amp; social">
-  <meta property="og:description" content="MIT Cursor agent skills: CLEAR blogging, SPARK editing, SNAP social casting, ORBIT discovery.">
+  <meta property="og:title" content="Clearcast — Agent skills for blog SEO, AEO &amp; social">
+  <meta property="og:description" content="MIT skills for Claude Code, Cursor, and Cowork: CLEAR blogging, SPARK editing, SNAP social, ORBIT discovery. Grounded writing — no fabricated stats.">
   <meta property="og:url" content="https://dranshrad.github.io/clearcast/">
-  <meta property="og:image" content="https://dranshrad.github.io/clearcast/assets/og-cover.svg">
+  <meta property="og:image" content="https://dranshrad.github.io/clearcast/assets/og-cover.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <style>
@@ -26,6 +26,7 @@
     pre { padding: 1rem; overflow-x: auto; }
     ul { padding-left: 1.2rem; }
     .nav a { margin-right: 1rem; }
+    .hero { width:100%; border-radius: 8px; margin: 1rem 0 1.5rem; }
   </style>
 </head>
 <body>
@@ -33,24 +34,27 @@
     <p class="nav">
       <a href="https://github.com/dranshrad/clearcast">GitHub</a>
       <a href="getting-started.md">Getting started</a>
+      <a href="frameworks.md">Frameworks</a>
       <a href="ECOSYSTEM.md">Ecosystem</a>
       <a href="COVERAGE.md">Coverage</a>
       <a href="faq.md">FAQ</a>
     </p>
     <h1>Clearcast</h1>
-    <p class="lead">Cursor agent skills for publish-ready blogs, SEO &amp; AEO citation readiness, editorial refinement, social casting, and multi-surface discovery.</p>
+    <img class="hero" src="assets/og-cover.png" alt="Clearcast — CLEAR SPARK ORBIT SNAP">
+    <p class="lead">Agent skills for Claude Code, Cursor, and Cowork: publish-ready blogs, SEO &amp; AEO readiness, editorial refinement, social casting, and multi-surface discovery — without inventing statistics.</p>
     <h2>Install</h2>
     <pre><code>git clone https://github.com/dranshrad/clearcast.git
-cp -R clearcast/skills/* ~/.cursor/skills/</code></pre>
+cd clearcast && bash scripts/install.sh</code></pre>
+    <p>Or copy <code>skills/*</code> into <code>~/.claude/skills/</code> and/or <code>~/.cursor/skills/</code>. Cowork: upload each skill zip.</p>
     <h2>Frameworks</h2>
     <ul>
-      <li><strong>CLEAR</strong> — blog-engine (claim ledger, Ship Scan, Cite Surface)</li>
-      <li><strong>SPARK</strong> — editorial-pass (multi-pass polish, Voice Canon)</li>
-      <li><strong>SNAP + PULSE</strong> — social-cast (hooks, calendars, analytics)</li>
-      <li><strong>ORBIT</strong> — orbit-discovery (surfaces, Echo Map, Close Path)</li>
-      <li><strong>Studio Desk / Cue Deck</strong> — workspace ops &amp; prompt cards</li>
+      <li><strong>CLEAR</strong> — blog-engine + claim ledger + Grounding Law</li>
+      <li><strong>SPARK</strong> — editorial-pass</li>
+      <li><strong>SNAP + PULSE</strong> — social-cast</li>
+      <li><strong>ORBIT</strong> — orbit-discovery</li>
+      <li><strong>Studio Desk / Cue Deck</strong> — ops &amp; prompts</li>
     </ul>
-    <h2>Sister repositories</h2>
+    <h2>Related projects</h2>
     <ul>
       <li><a href="https://github.com/dranshrad/voice-notes-to-anthropic-artifacts">voice-notes-to-anthropic-artifacts</a></li>
       <li><a href="https://github.com/dranshrad/llm-cst-refactorer">llm-cst-refactorer</a></li>

@@ -1,33 +1,67 @@
 # Install Clearcast
 
-## Cursor (recommended)
+Works with **Claude Code**, **Cursor**, and **Cowork**.
+
+## One-shot helper
 
 ```bash
 git clone https://github.com/dranshrad/clearcast.git /tmp/clearcast
-mkdir -p ~/.cursor/skills
-cp -R /tmp/clearcast/skills/* ~/.cursor/skills/
+cd /tmp/clearcast
+bash scripts/install.sh          # installs to Claude + Cursor if those dirs exist
+bash scripts/install.sh --claude # ~/.claude/skills only
+bash scripts/install.sh --cursor # ~/.cursor/skills only
+```
+
+## Claude Code (manual)
+
+```bash
+mkdir -p ~/.claude/skills
+cp -R /path/to/clearcast/skills/* ~/.claude/skills/
 ```
 
 Expected:
 
 ```
-~/.cursor/skills/clearcast/
-~/.cursor/skills/blog-engine/
-~/.cursor/skills/editorial-pass/
-~/.cursor/skills/social-cast/
-~/.cursor/skills/orbit-discovery/
-~/.cursor/skills/studio-desk/
-~/.cursor/skills/cue-deck/
+~/.claude/skills/clearcast/
+~/.claude/skills/blog-engine/
+~/.claude/skills/editorial-pass/
+~/.claude/skills/social-cast/
+~/.claude/skills/orbit-discovery/
+~/.claude/skills/studio-desk/
+~/.claude/skills/cue-deck/
 ```
+
+Plugin marketplace (from a machine with Claude Code):
+
+```text
+/plugin marketplace add dranshrad/clearcast
+/plugin install clearcast@clearcast-marketplace
+```
+
+Project instructions: keep [CLAUDE.md](CLAUDE.md) in the repo or copy grounding rules into your project `CLAUDE.md`.
+
+## Cursor (manual)
+
+```bash
+mkdir -p ~/.cursor/skills
+cp -R /path/to/clearcast/skills/* ~/.cursor/skills/
+```
+
+## Cowork
+
+1. For each skill under `skills/`, zip the folder so `SKILL.md` is at the zip root (or as the client requires).
+2. **Cowork → Customize → Skills → Upload**
+3. Repeat for all seven skills for full coverage.
 
 ## Project-local
 
 ```bash
-mkdir -p .cursor/skills
+mkdir -p .claude/skills .cursor/skills
+cp -R /path/to/clearcast/skills/* .claude/skills/
 cp -R /path/to/clearcast/skills/* .cursor/skills/
 ```
 
-## Docs site
+## Docs
 
 https://dranshrad.github.io/clearcast/
 
