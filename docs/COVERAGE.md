@@ -1,10 +1,10 @@
 # Coverage ledger
 
-Maps generic content-ops capabilities to **Clearcast-native** features. Status `mapped` = present in this repository.
+Maps generic content-ops capabilities to **Groundledger-native** features. Status `mapped` = present in this repository.
 
 ## Long-form / SEO / AEO
 
-| Capability | Clearcast feature | Status |
+| Capability | Groundledger feature | Status |
 |------------|-------------------|--------|
 | Draft / rewrite | blog-engine `draft` / `improve` | mapped |
 | Quality score | CLEAR rubric | mapped |
@@ -32,7 +32,7 @@ Maps generic content-ops capabilities to **Clearcast-native** features. Status `
 
 ## Editorial / workspace
 
-| Capability | Clearcast feature | Status |
+| Capability | Groundledger feature | Status |
 |------------|-------------------|--------|
 | Multi-pass edit | SPARK | mapped |
 | Tone retarget | Tone Retarget | mapped |
@@ -47,7 +47,7 @@ Maps generic content-ops capabilities to **Clearcast-native** features. Status `
 
 ## Social
 
-| Capability | Clearcast feature | Status |
+| Capability | Groundledger feature | Status |
 |------------|-------------------|--------|
 | Context file | CAST.md / context | mapped |
 | Strategy | Cast Strategy Brief | mapped |
@@ -62,7 +62,7 @@ Maps generic content-ops capabilities to **Clearcast-native** features. Status `
 
 ## Multi-surface discovery
 
-| Capability | Clearcast feature | Status |
+| Capability | Groundledger feature | Status |
 |------------|-------------------|--------|
 | Operating loop | ORBIT | mapped |
 | Stage diagnose | Stage Triage | mapped |
@@ -79,7 +79,7 @@ Maps generic content-ops capabilities to **Clearcast-native** features. Status `
 
 ## Site SEO (PROBE / site-signal)
 
-| Capability | Clearcast feature | Status |
+| Capability | Groundledger feature | Status |
 |------------|-------------------|--------|
 | Falsifiable recommendations | PROBE (Proof · Relies-on · Overturn · Beacon · Effort) | mapped |
 | Weighted site score | Site Health Dial | mapped |
@@ -95,7 +95,7 @@ Maps generic content-ops capabilities to **Clearcast-native** features. Status `
 
 ## Paid media (SAFE / paid-cast)
 
-| Capability | Clearcast feature | Status |
+| Capability | Groundledger feature | Status |
 |------------|-------------------|--------|
 | Observe-only default | SAFE Snapshot; latch closed | mapped |
 | Draft → approve → ceilings → verify | MutationLatch | mapped |

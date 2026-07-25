@@ -1,7 +1,7 @@
 ---
 name: blog-engine
 description: >-
-  Clearcast long-form skill: CLEAR rubric, claim ledgers, adversarial Q-tests,
+  Groundledger long-form skill: CLEAR rubric, claim ledgers, adversarial Q-tests,
   grounding law (no fabricated stats), YMYL, Ship Scan, Cite Surface Audit,
   Freshness Drift, Graph Runner, Locale Lattice, Release Latch. Use for blog
   drafts, rewrites, SEO audits, citation checks, clusters, multilingual plans,
@@ -12,7 +12,7 @@ compatibility: Claude Code, Cursor, Cowork (Agent Skills)
 
 # Blog Engine (CLEAR Editorial System)
 
-Clearcast long-form skill for grounded, publish-ready articles.
+Groundledger long-form skill for grounded, publish-ready articles.
 
 **Ship rule:** CLEAR ≥ 85, claim ledger clean, Q-tests pass, residual risk
 accepted, Grounding Law satisfied, and (when requested) Ship Scan + Release Latch green.

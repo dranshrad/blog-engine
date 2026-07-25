@@ -1,10 +1,10 @@
-# Clearcast — Agent Project Instructions
+# Groundledger — Agent Project Instructions
 
-This repository is the **Clearcast** skill suite for grounded content work on Claude Code, Cursor, and compatible agents (including Cowork skill uploads).
+This repository is the **Groundledger** skill suite for grounded content work on Claude Code, Cursor, and compatible agents (including Cowork skill uploads).
 
 ## Load order
 
-1. Read `skills/clearcast/SKILL.md` for routing.
+1. Read `skills/groundledger/SKILL.md` for routing.
 2. Load only the skill needed for the task.
 3. Always obey `skills/blog-engine/references/grounding.md` (anti-hallucination).
 
@@ -19,7 +19,7 @@ This repository is the **Clearcast** skill suite for grounded content work on Cl
 
 | Directory | Framework |
 |-----------|-----------|
-| `skills/clearcast/` | Router |
+| `skills/groundledger/` | Router |
 | `skills/blog-engine/` | CLEAR |
 | `skills/editorial-pass/` | SPARK |
 | `skills/social-cast/` | SNAP + PULSE |

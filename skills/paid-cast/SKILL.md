@@ -1,7 +1,7 @@
 ---
 name: paid-cast
 description: >-
-  Clearcast paid-media skill with SAFE defaults (Snapshot → Advise → Fence →
+  Groundledger paid-media skill with SAFE defaults (Snapshot → Advise → Fence →
   Experiment). Observe-only unless MutationLatch opens. Modes: audit, plan,
   math, brand, budget, trial, attrib, landing, creative, pace, optimize-draft.
   Use for Google/Meta/LinkedIn/Microsoft-style account reviews, unit economics,
@@ -13,7 +13,7 @@ compatibility: Claude Code, Cursor, Cowork (Agent Skills)
 
 # Paid Cast (SAFE media)
 
-Clearcast paid acquisition desk. Complements `orbit-discovery` (organic surfaces),
+Groundledger paid acquisition desk. Complements `orbit-discovery` (organic surfaces),
 `site-signal` (landing SEO), and `social-cast` (organic social).
 
 **Default: observe-only.** No platform mutations, no budget edits, no status flips

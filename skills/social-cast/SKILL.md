@@ -1,7 +1,7 @@
 ---
 name: social-cast
 description: >-
-  Clearcast social skill: SNAP hooks, posts, threads, carousels, captions,
+  Groundledger social skill: SNAP hooks, posts, threads, carousels, captions,
   atomize, PULSE calendars, Cast Strategy Brief, Surface Playbook, Pulse
   Readout Deep, Format Signal Mine, Growth Action Stack, Audience Orbit. Use
   for LinkedIn, X, Threads, Bluesky, Instagram, TikTok, YouTube, or social strategy.

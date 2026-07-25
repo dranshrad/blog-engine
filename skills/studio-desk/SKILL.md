@@ -1,7 +1,7 @@
 ---
 name: studio-desk
 description: >-
-  Clearcast workspace ops: Workspace Boot, studios (Longform, Blog Desk, Op-Ed
+  Groundledger workspace ops: Workspace Boot, studios (Longform, Blog Desk, Op-Ed
   Shelf, Doc Templates), Draft Lineage, Version Vault, Cast Desk Status, Export
   Pack, Ship Gate, Collection Index. Use when scaffolding a writing workspace,
   versioning drafts, exporting, or preparing CMS handoff.
@@ -10,7 +10,7 @@ license: MIT
 
 # Studio Desk
 
-Clearcast workspace and publishing-ops skill.
+Groundledger workspace and publishing-ops skill.
 
 ## Modes
 

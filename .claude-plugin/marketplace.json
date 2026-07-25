@@ -1,16 +1,16 @@
 {
-  "name": "clearcast-marketplace",
+  "name": "groundledger-marketplace",
   "owner": {
     "name": "Divyansh Gupta",
     "url": "https://github.com/dranshrad"
   },
   "metadata": {
-    "description": "Clearcast — grounded content, SEO, and paid-media skills for Claude Code and compatible agents",
-    "version": "1.2.0"
+    "description": "Groundledger — grounded content, SEO, and paid-media skills for Claude Code and compatible agents",
+    "version": "2.0.0"
   },
   "plugins": [
     {
-      "name": "clearcast",
+      "name": "groundledger",
       "source": "./",
       "description": "CLEAR blog, PROBE site SEO, SAFE paid media, SPARK editorial, SNAP social, ORBIT discovery, Studio Desk, Cue Deck"
     }

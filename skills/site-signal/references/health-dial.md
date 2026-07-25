@@ -1,6 +1,6 @@
 # Site Health Dial
 
-Composite 0–100 score for Clearcast Site Signal audits. Every axis needs **evidence**. Missing evidence → reduce coverage, do not invent points.
+Composite 0–100 score for Groundledger Site Signal audits. Every axis needs **evidence**. Missing evidence → reduce coverage, do not invent points.
 
 ## Default weights
 

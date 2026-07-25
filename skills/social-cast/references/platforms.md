@@ -1,4 +1,4 @@
-# Platform Shapes (Clearcast)
+# Platform Shapes (Groundledger)
 
 ## LinkedIn
 - Hook in first 2 lines

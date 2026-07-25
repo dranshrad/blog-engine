@@ -1,16 +1,16 @@
 ---
-name: clearcast
+name: groundledger
 description: >-
-  Orchestrator for Clearcast: CLEAR blogging, SPARK editorial, SNAP social,
+  Orchestrator for Groundledger: CLEAR blogging, SPARK editorial, SNAP social,
   ORBIT discovery, PROBE site SEO, SAFE paid media, Studio Desk ops, and Cue
   Deck prompts. Enforces grounding (no fabricated stats) and observe-only ads
   by default. Use for Claude Code, Cursor, or Cowork when the user mentions
-  clearcast, SEO audit, paid media, content suite, or is unsure which skill.
+  groundledger, SEO audit, paid media, content suite, or is unsure which skill.
 license: MIT
 compatibility: Claude Code, Cursor, Cowork (Agent Skills)
 ---
 
-# Clearcast Orchestrator
+# Groundledger Orchestrator
 
 Route across eight skills. Obey Grounding Law before any “final” delivery.
 

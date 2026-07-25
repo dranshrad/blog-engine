@@ -1,8 +1,8 @@
-# Clearcast frameworks (detailed)
+# Groundledger frameworks (detailed)
 
 ## Grounding Law (applies to all)
 
-See [grounding.md](https://github.com/dranshrad/clearcast/blob/master/skills/blog-engine/references/grounding.md).
+See [grounding.md](https://github.com/dranshrad/groundledger/blob/master/skills/blog-engine/references/grounding.md).
 
 - Never invent statistics, studies, quotes, or customer results
 - Material claims → claim ledger (`verified` / `attributed` / `author-supplied`)

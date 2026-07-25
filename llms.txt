@@ -1,17 +1,21 @@
-# Clearcast
+# Groundledger
 
 > Agent skills for Claude Code, Cursor, and Cowork: CLEAR blog publishing, SPARK editorial, SNAP/PULSE social casting, ORBIT discovery, PROBE site SEO, SAFE paid media, Studio Desk, Cue Deck. Grounded writing — no fabricated statistics. Paid observe-only by default.
 
-MIT License. https://github.com/dranshrad/clearcast
-Docs: https://dranshrad.github.io/clearcast/
+Formerly Clearcast; renamed to Groundledger. Not affiliated with Clearcast UK or other ClearCast apps.
+
+MIT License. https://github.com/dranshrad/groundledger
+Docs: https://dranshrad.github.io/groundledger/
+Brand: https://dranshrad.github.io/groundledger/brand.md
+
 
 ## Grounding
 
-- https://github.com/dranshrad/clearcast/blob/master/skills/blog-engine/references/grounding.md
+- https://github.com/dranshrad/groundledger/blob/master/skills/blog-engine/references/grounding.md
 
 ## Skills
 
-- skills/clearcast/SKILL.md
+- skills/groundledger/SKILL.md
 - skills/blog-engine/SKILL.md
 - skills/editorial-pass/SKILL.md
 - skills/social-cast/SKILL.md
@@ -23,12 +27,12 @@ Docs: https://dranshrad.github.io/clearcast/
 
 ## Docs
 
-- https://dranshrad.github.io/clearcast/
-- https://dranshrad.github.io/clearcast/getting-started.md
-- https://dranshrad.github.io/clearcast/frameworks.md
-- https://dranshrad.github.io/clearcast/ECOSYSTEM.md
-- https://dranshrad.github.io/clearcast/COVERAGE.md
-- https://dranshrad.github.io/clearcast/faq.md
+- https://dranshrad.github.io/groundledger/
+- https://dranshrad.github.io/groundledger/getting-started.md
+- https://dranshrad.github.io/groundledger/frameworks.md
+- https://dranshrad.github.io/groundledger/ECOSYSTEM.md
+- https://dranshrad.github.io/groundledger/COVERAGE.md
+- https://dranshrad.github.io/groundledger/faq.md
 
 ## Sister repositories
 

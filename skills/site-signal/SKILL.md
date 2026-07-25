@@ -1,7 +1,7 @@
 ---
 name: site-signal
 description: >-
-  Clearcast site SEO skill using PROBE recommendations and a weighted Site
+  Groundledger site SEO skill using PROBE recommendations and a weighted Site
   Health Dial. Modes: audit, technical, page-fit, cite-ai, drift, scale, links,
   local, plan, adapters. Use for technical SEO, SERP page-type fit, AI-search
   readiness, baseline drift, programmatic risk, local profiles, or SEO roadmaps
@@ -12,7 +12,7 @@ compatibility: Claude Code, Cursor, Cowork (Agent Skills)
 
 # Site Signal (PROBE SEO)
 
-Clearcast SEO operations for owned sites. Complements `blog-engine` (pages) and
+Groundledger SEO operations for owned sites. Complements `blog-engine` (pages) and
 `orbit-discovery` (surfaces). Does **not** invent rankings, traffic, or link metrics.
 
 **Grounding:** `skills/blog-engine/references/grounding.md` — no fabricated

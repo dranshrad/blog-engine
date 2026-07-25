@@ -1,9 +1,13 @@
-Clearcast
+Groundledger
 Copyright (c) 2026 Divyansh Gupta
 
 Licensed under the MIT License (see LICENSE).
 
-Clearcast frameworks (CLEAR, SPARK, SNAP, PULSE, ORBIT, PROBE, SAFE, Studio Desk,
+Formerly published as Clearcast; renamed to Groundledger to avoid unrelated
+trademark/name collisions. Not affiliated with Clearcast UK or other ClearCast
+products.
+
+Groundledger frameworks (CLEAR, SPARK, SNAP, PULSE, ORBIT, PROBE, SAFE, Studio Desk,
 Cue Deck) and their workflows, artifacts, and docs in this repository are
 original work.
 

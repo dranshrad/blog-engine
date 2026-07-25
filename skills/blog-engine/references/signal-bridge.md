@@ -1,10 +1,10 @@
 # Signal Bridge
 
-Pluggable analytics adapters. Clearcast does not require any vendor.
+Pluggable analytics adapters. Groundledger does not require any vendor.
 
 ## Adapter checklist
 
-| Signal | Typical source | Use in Clearcast |
+| Signal | Typical source | Use in Groundledger |
 |--------|----------------|------------------|
 | CWV / lab perf | PSI, CrUX, Lighthouse | Ship Scan notes |
 | Search queries | GSC export | Freshness Drift, Horizon |

@@ -1,7 +1,7 @@
 ---
 name: cue-deck
 description: >-
-  Clearcast Cue Deck: original prompt cards keyed to ORBIT stages and CLEAR
+  Groundledger Cue Deck: original prompt cards keyed to ORBIT stages and CLEAR
   modes (When, Inputs, Prompt, Output, Risks). Use when the user wants a
   reusable prompt, strategy cue, or agent instruction for content work.
 license: MIT
@@ -9,7 +9,7 @@ license: MIT
 
 # Cue Deck
 
-Clearcast prompt cards. Every card that asks for facts inherits Grounding Law.
+Groundledger prompt cards. Every card that asks for facts inherits Grounding Law.
 
 ## Modes
 

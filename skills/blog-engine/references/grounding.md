@@ -1,6 +1,6 @@
 # Grounding Law (Anti-Hallucination)
 
-Binding for every Clearcast skill. Prefer silence or uncertainty over invention.
+Binding for every Groundledger skill. Prefer silence or uncertainty over invention.
 
 ## Hard bans (never output as fact)
 

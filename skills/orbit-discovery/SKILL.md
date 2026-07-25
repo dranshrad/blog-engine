@@ -1,7 +1,7 @@
 ---
 name: orbit-discovery
 description: >-
-  Clearcast ORBIT discovery: Stage Triage, Surface Bet Cards, Echo Map, Close
+  Groundledger ORBIT discovery: Stage Triage, Surface Bet Cards, Echo Map, Close
   Path, Question Spray, Entity Concord, Place Signal, Orbit Dial, Provenance
   Shelf, Signal Field, and Path Cards. Use for strategy, clusters, SEO surface
   choice, conversion pages, local signals, or off-site corroboration.
@@ -14,7 +14,7 @@ license: MIT
 Observe → Reinforce → Build → Instrument → Transmit → (repeat)
 ```
 
-Clearcast discovery loop. Strategy language stays qualitative unless a number
+Groundledger discovery loop. Strategy language stays qualitative unless a number
 is ledgered under Grounding Law (`blog-engine/references/grounding.md`).
 
 ## Modes

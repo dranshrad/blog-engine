@@ -1,24 +1,26 @@
-# Clearcast — Agent Skills for Content, SEO, AEO & Paid Media
+# Groundledger — Agent Skills for Content, SEO, AEO & Paid Media
 
 <p align="center">
-  <img src="assets/og-cover.png" alt="Clearcast — CLEAR SPARK ORBIT SNAP PROBE SAFE agent skills" width="100%">
+  <img src="assets/og-cover.png" alt="Groundledger — CLEAR SPARK ORBIT SNAP PROBE SAFE agent skills" width="100%">
 </p>
 
-**Clearcast** is an MIT suite of Agent Skills for **Claude Code**, **Cursor**, and **Cowork**: publish-ready blogging, site SEO audits, observe-only paid media, multi-pass editing, platform-native social, and multi-surface strategy — with a hard ban on fabricated statistics.
+**Groundledger** is an MIT suite of Agent Skills for **Claude Code**, **Cursor**, and **Cowork**: publish-ready blogging, site SEO audits, observe-only paid media, multi-pass editing, platform-native social, and multi-surface strategy — with a hard ban on fabricated statistics.
 
-> Docs: [dranshrad.github.io/clearcast](https://dranshrad.github.io/clearcast/) · Repo: [github.com/dranshrad/clearcast](https://github.com/dranshrad/clearcast)
+> Docs: [dranshrad.github.io/groundledger](https://dranshrad.github.io/groundledger/) · Repo: [github.com/dranshrad/groundledger](https://github.com/dranshrad/groundledger)
+
+Formerly published as **Clearcast**; renamed to **Groundledger** to avoid unrelated trademark/name collisions (not affiliated with Clearcast UK or other ClearCast apps).
 
 Updated: 2026-07-25
 
-## Why Clearcast?
+## Why Groundledger?
 
-Content and acquisition work should (1) help a reader finish a job, (2) be extractable for AI answers, (3) cast into social without inventing numbers, (4) audit sites with falsifiable recommendations, and (5) keep paid media **observe-only** until explicit approval. Clearcast ships **CLEAR**, **SPARK**, **ORBIT**, **SNAP/PULSE**, **PROBE**, **SAFE**, Studio Desk, and Cue Deck — plus a binding [Grounding Law](skills/blog-engine/references/grounding.md).
+Content and acquisition work should (1) help a reader finish a job, (2) be extractable for AI answers, (3) cast into social without inventing numbers, (4) audit sites with falsifiable recommendations, and (5) keep paid media **observe-only** until explicit approval. Groundledger ships **CLEAR**, **SPARK**, **ORBIT**, **SNAP/PULSE**, **PROBE**, **SAFE**, Studio Desk, and Cue Deck — plus a binding [Grounding Law](skills/blog-engine/references/grounding.md).
 
 ## Skills
 
 | Skill | Framework | Use for |
 |-------|-----------|---------|
-| [clearcast](skills/clearcast/) | Router | Pick / compose skills |
+| [groundledger](skills/groundledger/) | Router | Pick / compose skills |
 | [blog-engine](skills/blog-engine/) | **CLEAR** | Articles, claim ledgers, Ship Scan, Cite Surface |
 | [editorial-pass](skills/editorial-pass/) | **SPARK** | Multi-pass polish, Tone Retarget, Voice Canon |
 | [social-cast](skills/social-cast/) | **SNAP + PULSE** | Hooks, posts, atomize, calendars, analytics |
@@ -33,16 +35,16 @@ Content and acquisition work should (1) help a reader finish a job, (2) be extra
 ### Claude Code
 
 ```bash
-git clone https://github.com/dranshrad/clearcast.git
+git clone https://github.com/dranshrad/groundledger.git
 mkdir -p ~/.claude/skills
-cp -R clearcast/skills/* ~/.claude/skills/
+cp -R groundledger/skills/* ~/.claude/skills/
 ```
 
 Plugin-style (from repo root, Claude Code):
 
 ```text
-/plugin marketplace add dranshrad/clearcast
-/plugin install clearcast@clearcast-marketplace
+/plugin marketplace add dranshrad/groundledger
+/plugin install groundledger@groundledger-marketplace
 ```
 
 Or: `claude plugin install .` when this directory is the working tree (if your Claude Code build supports local plugin install).
@@ -50,14 +52,14 @@ Or: `claude plugin install .` when this directory is the working tree (if your C
 ### Cursor
 
 ```bash
-git clone https://github.com/dranshrad/clearcast.git
+git clone https://github.com/dranshrad/groundledger.git
 mkdir -p ~/.cursor/skills
-cp -R clearcast/skills/* ~/.cursor/skills/
+cp -R groundledger/skills/* ~/.cursor/skills/
 ```
 
 ### Cowork / skill zip upload
 
-Zip each folder under `skills/<name>/` (must contain `SKILL.md`) and upload via **Cowork → Customize → Skills**. Upload all nine for the full suite, or start with `clearcast` + `blog-engine`.
+Zip each folder under `skills/<name>/` (must contain `SKILL.md`) and upload via **Cowork → Customize → Skills**. Upload all nine for the full suite, or start with `groundledger` + `blog-engine`.
 
 Project-local (either client): copy into `.claude/skills/` and/or `.cursor/skills/`.
 

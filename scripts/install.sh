@@ -13,7 +13,7 @@ install_into() {
   else
     cp -R "$ROOT/skills/." "$dest/"
   fi
-  echo "Installed Clearcast skills → $dest"
+  echo "Installed Groundledger skills → $dest"
 }
 
 case "$MODE" in

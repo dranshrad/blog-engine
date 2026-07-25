@@ -15,4 +15,4 @@ Site Signal works from fetched HTML + user files. Vendor tools are **enrichment 
 1. Detect presence; ask before assuming access.
 2. Never invent GSC/CrUX numbers.
 3. Never require a paid API to complete an audit — mark axes `insufficient data` instead.
-4. Normalize column names in prose; do not ship vendor-specific scripts as Clearcast canon.
+4. Normalize column names in prose; do not ship vendor-specific scripts as Groundledger canon.

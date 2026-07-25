@@ -1,4 +1,4 @@
-# Agent conventions (Clearcast)
+# Agent conventions (Groundledger)
 
 ## Skill layout
 

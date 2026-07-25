@@ -37,7 +37,7 @@ Each mutation item:
 4. Ceiling check  
 5. Rollback step  
 
-Ship as a checklist the human (or their API) applies. Clearcast does not hold ad-account credentials as canon.
+Ship as a checklist the human (or their API) applies. Groundledger does not hold ad-account credentials as canon.
 
 ## Idempotency / rollback
 

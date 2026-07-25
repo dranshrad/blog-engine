@@ -46,7 +46,7 @@
 **Next skill:** orbit-discovery
 
 ## Cue — C-draft
-**When:** Starting a Clearcast article.  
+**When:** Starting a Groundledger article.  
 **Inputs:** JTBD + spine.  
 **Prompt:**
 > Draft under CLEAR rules. Emit claim ledger, Q-test, residual risks, scorecard. Invent zero statistics.

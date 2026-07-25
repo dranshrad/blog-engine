@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dranshrad.github.io/groundledger/sitemap.xml
