@@ -11,6 +11,9 @@ Binding for every Clearcast skill. Prefer silence or uncertainty over invention.
 5. Invented URLs, DOIs, or screenshot claims
 6. Fake tool/API behavior or version numbers not verified in-session or by the user
 7. Date bumps (`dateModified`) without a substantive content change
+8. Invented rankings, impressions, CTR, backlink counts, Domain Rating, or CWV scores
+9. Invented ROAS, CPA, CPC, conversion rates, or “industry benchmark” performance numbers
+10. Claiming live ad-account mutations occurred when MutationLatch was closed
 
 ## Allowed claim classes
 
@@ -43,6 +46,8 @@ Do not present a draft as final if:
 - Any ledger row is `blocked`
 - Any statistic lacks publisher + year (URL when available)
 - Social hooks contain numbers not on the ledger
+- Site Health Dial axes were scored without evidence (use `insufficient data`)
+- Paid advice pretends platform writes were applied without approved MutationLatch
 
 ## Agent self-check (run silently before delivery)
 
@@ -50,6 +55,8 @@ Do not present a draft as final if:
 [ ] Every % / $ / “study” has a ledger row
 [ ] No quotes without sources
 [ ] No “internal data” unless user supplied it
+[ ] No invented GSC / rank / ROAS figures
 [ ] Uncertainties labeled
 [ ] Residual risks list open gaps
+[ ] Paid: latch closed ⇒ observe-only language only
 ```

@@ -77,6 +77,40 @@ Maps generic content-ops capabilities to **Clearcast-native** features. Status `
 | Playbooks | Path Cards | mapped |
 | Prompt library | Cue Deck | mapped |
 
+## Site SEO (PROBE / site-signal)
+
+| Capability | Clearcast feature | Status |
+|------------|-------------------|--------|
+| Falsifiable recommendations | PROBE (Proof · Relies-on · Overturn · Beacon · Effort) | mapped |
+| Weighted site score | Site Health Dial | mapped |
+| Partial-failure specialist fan-out | Audit workflow coverage report | mapped |
+| SERP page-type mismatch | `page-fit` mode | mapped |
+| AI-answer / citability readiness | `cite-ai` (+ blog Cite Surface) | mapped |
+| Baseline drift | `drift` + SITE_BASELINE.json | mapped |
+| Programmatic uniqueness / index bloat | `scale` mode | mapped |
+| Local / NAP branching | `local` mode | mapped |
+| Phased SEO roadmap | `plan` mode | mapped |
+| Optional vendor enrichment | `adapters` (GSC/CrUX/crawler) | mapped |
+| Technical / CWV honesty | `technical` + dial CWV axis | mapped |
+
+## Paid media (SAFE / paid-cast)
+
+| Capability | Clearcast feature | Status |
+|------------|-------------------|--------|
+| Observe-only default | SAFE Snapshot; latch closed | mapped |
+| Draft → approve → ceilings → verify | MutationLatch | mapped |
+| Idempotency / rollback cues | Latch + change pack format | mapped |
+| Claim / evidence / confidence | Snapshot contract | mapped |
+| Unit economics | `math` mode | mapped |
+| Brand safety / claim grid | Brand Lattice | mapped |
+| Budget caps / reserves | Budget Lattice | mapped |
+| Experiment design | Trial Deck | mapped |
+| Attribution comparability | `attrib` gate | mapped |
+| Post-click landing audit | `landing` (+ site-signal) | mapped |
+| Creative fatigue / variants | `creative` mode | mapped |
+| Pace vs plan | `pace` mode | mapped |
+| Platform change packs (draft-only) | `optimize-draft` | mapped |
+
 ## Client install surfaces
 
 | Client | Path | Status |

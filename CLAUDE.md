@@ -24,6 +24,8 @@ This repository is the **Clearcast** skill suite for grounded content work on Cl
 | `skills/editorial-pass/` | SPARK |
 | `skills/social-cast/` | SNAP + PULSE |
 | `skills/orbit-discovery/` | ORBIT |
+| `skills/site-signal/` | PROBE |
+| `skills/paid-cast/` | SAFE (+ MutationLatch) |
 | `skills/studio-desk/` | Workspace ops |
 | `skills/cue-deck/` | Prompt cards |
 
@@ -33,6 +35,8 @@ This repository is the **Clearcast** skill suite for grounded content work on Cl
 - Cursor: `~/.cursor/skills/<name>/`
 - Cowork: upload each skill directory / release zip per client UI
 
-## Composition default
+## Composition defaults
 
-`orbit-discovery` → `blog-engine` → `editorial-pass` → `social-cast` → `studio-desk` ship
+Content: `orbit-discovery` → `blog-engine` → `editorial-pass` → `social-cast` → `studio-desk` ship  
+SEO: `site-signal` → handoff to `blog-engine` / `orbit-discovery`  
+Paid: `paid-cast` observe-only; mutations only with approved MutationLatch  

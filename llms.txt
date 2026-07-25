@@ -1,6 +1,6 @@
 # Clearcast
 
-> Agent skills for Claude Code, Cursor, and Cowork: CLEAR blog publishing, SPARK editorial, SNAP/PULSE social casting, ORBIT discovery, Studio Desk, Cue Deck. Grounded writing — no fabricated statistics.
+> Agent skills for Claude Code, Cursor, and Cowork: CLEAR blog publishing, SPARK editorial, SNAP/PULSE social casting, ORBIT discovery, PROBE site SEO, SAFE paid media, Studio Desk, Cue Deck. Grounded writing — no fabricated statistics. Paid observe-only by default.
 
 MIT License. https://github.com/dranshrad/clearcast
 Docs: https://dranshrad.github.io/clearcast/
@@ -16,6 +16,8 @@ Docs: https://dranshrad.github.io/clearcast/
 - skills/editorial-pass/SKILL.md
 - skills/social-cast/SKILL.md
 - skills/orbit-discovery/SKILL.md
+- skills/site-signal/SKILL.md
+- skills/paid-cast/SKILL.md
 - skills/studio-desk/SKILL.md
 - skills/cue-deck/SKILL.md
 

@@ -34,8 +34,16 @@ Sanitize → Pace → Architecture → Reference → Knife. Voice lock + fact fr
 
 Observe → Reinforce → Build → Instrument → Transmit. Surface Bet Cards, Echo Map, Close Path, Question Spray, Entity Concord, Place Signal, Provenance Shelf, Path Cards.
 
+## PROBE (site-signal)
+
+Every SEO recommendation: **P**roof · **R**elies-on · **O**verturn (falsifier) · **B**eacon · **E**ffort. Site Health Dial (0–100) with coverage %. Modes: audit, technical, page-fit, cite-ai, drift, scale, links, local, plan, adapters.
+
+## SAFE (paid-cast)
+
+**S**napshot → **A**dvise → **F**ence → **E**xperiment. Observe-only until MutationLatch opens (scope + ceilings + approval). Modes: audit, plan, math, brand, budget, trial, attrib, landing, creative, pace, optimize-draft.
+
 ## Studio Desk / Cue Deck
 
-Workspace Boot, Draft Lineage, Version Vault, Export Pack, Ship Gate. Cue cards keyed to ORBIT/CLEAR with grounding inherited.
+Workspace Boot, Draft Lineage, Version Vault, Export Pack, Ship Gate. Cue cards keyed to ORBIT/CLEAR/PROBE/SAFE with grounding inherited.
 
 [← Home](index.html)

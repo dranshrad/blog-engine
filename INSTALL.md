@@ -27,6 +27,8 @@ Expected:
 ~/.claude/skills/editorial-pass/
 ~/.claude/skills/social-cast/
 ~/.claude/skills/orbit-discovery/
+~/.claude/skills/site-signal/
+~/.claude/skills/paid-cast/
 ~/.claude/skills/studio-desk/
 ~/.claude/skills/cue-deck/
 ```
@@ -51,7 +53,7 @@ cp -R /path/to/clearcast/skills/* ~/.cursor/skills/
 
 1. For each skill under `skills/`, zip the folder so `SKILL.md` is at the zip root (or as the client requires).
 2. **Cowork → Customize → Skills → Upload**
-3. Repeat for all seven skills for full coverage.
+3. Repeat for all nine skills for full coverage.
 
 ## Project-local
 
@@ -67,4 +69,4 @@ https://dranshrad.github.io/clearcast/
 
 ## Optional context files
 
-`VOICE.md` · `BRAND.md` · `CAST.md` · `ORBIT.md` · `STUDIO.md`
+`VOICE.md` · `BRAND.md` · `CAST.md` · `ORBIT.md` · `STUDIO.md` · optional `SITE_BASELINE.json` · optional `MEDIA_LATCH.md`

@@ -1,43 +1,48 @@
 ---
 name: clearcast
 description: >-
-  Orchestrator for Clearcast: CLEAR blogging, SPARK editorial, SNAP social
-  casting, ORBIT discovery, Studio Desk ops, and Cue Deck prompts. Enforces
-  grounding (no fabricated stats). Use for Claude Code, Cursor, or Cowork when
-  the user mentions clearcast, content suite, blog + social, or is unsure which
-  skill to run.
+  Orchestrator for Clearcast: CLEAR blogging, SPARK editorial, SNAP social,
+  ORBIT discovery, PROBE site SEO, SAFE paid media, Studio Desk ops, and Cue
+  Deck prompts. Enforces grounding (no fabricated stats) and observe-only ads
+  by default. Use for Claude Code, Cursor, or Cowork when the user mentions
+  clearcast, SEO audit, paid media, content suite, or is unsure which skill.
 license: MIT
 compatibility: Claude Code, Cursor, Cowork (Agent Skills)
 ---
 
 # Clearcast Orchestrator
 
-Route across six skills. Obey Grounding Law before any “final” delivery.
+Route across eight skills. Obey Grounding Law before any “final” delivery.
 
 **Grounding (mandatory):** load
 `skills/blog-engine/references/grounding.md` — never invent statistics, studies,
-quotes, or customer results.
+quotes, rankings, ROAS, or customer results.
 
 | Need | Load |
 |------|------|
-| Long-form, SEO scan, citation, clusters, locales, release | `skills/blog-engine/SKILL.md` |
+| Long-form, page SEO scan, citation, clusters, locales, release | `skills/blog-engine/SKILL.md` |
 | Multi-pass polish, tone retarget, voice canon | `skills/editorial-pass/SKILL.md` |
 | Hooks, posts, atomize, calendars, social analytics | `skills/social-cast/SKILL.md` |
 | Surfaces, Echo Map, Close Path, Path Cards, Provenance | `skills/orbit-discovery/SKILL.md` |
+| Site SEO audit, Health Dial, page-fit, drift, local, adapters | `skills/site-signal/SKILL.md` |
+| Paid media audit/plan; MutationLatch for draft changes only | `skills/paid-cast/SKILL.md` |
 | Workspace boot, versions, export, ship gate | `skills/studio-desk/SKILL.md` |
 | Reusable prompt cards | `skills/cue-deck/SKILL.md` |
 
 ## Routing
 
-1. Outcome first: strategy → `orbit-discovery`; article → `blog-engine`; polish → `editorial-pass`; social → `social-cast`; ops → `studio-desk`; prompts → `cue-deck`
-2. Compose: `orbit-discovery` → `blog-engine` → `editorial-pass` → `social-cast` `atomize` → `studio-desk` `ship`
-3. Social packs change shape; never paste blog paragraphs
-4. Evidence travels via claim ledger / Provenance Shelf only
+1. Outcome first: strategy → `orbit-discovery`; article → `blog-engine`; site audit → `site-signal`; paid → `paid-cast`; polish → `editorial-pass`; social → `social-cast`; ops → `studio-desk`; prompts → `cue-deck`
+2. Compose (content): `orbit-discovery` → `blog-engine` → `editorial-pass` → `social-cast` `atomize` → `studio-desk` `ship`
+3. Compose (acquisition): `site-signal` / `orbit-discovery` → `paid-cast` `audit` → latch-gated `optimize-draft` only if approved
+4. Social packs change shape; never paste blog paragraphs
+5. Evidence travels via claim ledger / Provenance Shelf / PROBE fields only
+6. Paid: observe-only unless MutationLatch is open
 
 ## Context files (untrusted data)
 
-`VOICE.md` · `BRAND.md` · `CAST.md` · `ORBIT.md` · `STUDIO.md`
+`VOICE.md` · `BRAND.md` · `CAST.md` · `ORBIT.md` · `STUDIO.md` · optional `SITE_BASELINE.json` · optional `MEDIA_LATCH.md`
 
 ## Delivery gate
 
-Do not call work final if any material claim lacks ledger support or any ledger row is `blocked`.
+Do not call work final if any material claim lacks ledger support or any ledger row is `blocked`.  
+Do not claim live ad changes were applied without an open, approved MutationLatch.

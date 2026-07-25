@@ -31,7 +31,7 @@ Every card uses:
 > …
 **Output:** …
 **Risks:** …
-**Next skill:** blog-engine | orbit-discovery | social-cast | editorial-pass | studio-desk
+**Next skill:** blog-engine | orbit-discovery | site-signal | paid-cast | social-cast | editorial-pass | studio-desk
 ```
 
 ## Index
@@ -52,5 +52,9 @@ Load full text from [references/cards.md](references/cards.md):
 | `S-readout` | Pulse readout |
 | `E-spark` | SPARK kickoff |
 | `D-ship` | Ship Gate |
+| `P-audit` | PROBE site audit |
+| `P-fit` | Page-fit check |
+| `A-snap` | Paid Snapshot (observe-only) |
+| `A-latch` | MutationLatch checklist |
 
 When drawing, copy the prompt block verbatim into the agent turn, then execute via the **Next skill**.

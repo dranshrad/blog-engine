@@ -1,7 +1,7 @@
 {
   "name": "clearcast",
-  "description": "Clearcast agent-skill suite for publish-ready blogging (CLEAR), multi-pass editorial refinement (SPARK), social casting (SNAP/PULSE), multi-surface discovery (ORBIT), Studio Desk ops, and Cue Deck prompts. Grounded writing with claim ledgers; no fabricated statistics.",
-  "version": "1.1.0",
+  "description": "Clearcast agent-skill suite for publish-ready blogging (CLEAR), site SEO (PROBE), paid media observe-only (SAFE), SPARK editorial, SNAP/PULSE social, ORBIT discovery, Studio Desk, and Cue Deck. Grounded writing with claim ledgers; no fabricated statistics; no live ad mutations without MutationLatch.",
+  "version": "1.2.0",
   "author": {
     "name": "Divyansh Gupta",
     "url": "https://github.com/dranshrad"
@@ -18,6 +18,9 @@
     "writing",
     "social-media",
     "editorial",
+    "paid-media",
+    "ppc",
+    "technical-seo",
     "clearcast",
     "skills"
   ]

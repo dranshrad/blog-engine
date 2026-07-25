@@ -107,3 +107,39 @@
 **Output:** Gate checklist.  
 **Risks:** Calling draft “final” while latch open.  
 **Next skill:** studio-desk
+
+## Cue — P-audit
+**When:** User wants a site SEO audit.  
+**Inputs:** URL(s) + optional GSC/export.  
+**Prompt:**
+> Run site-signal audit: Health Dial with coverage %, industry confirm, PROBE items only (Proof Relies-on Overturn Beacon Effort). No invented rankings or traffic.
+**Output:** Dial + PROBE plan + watchlist.  
+**Risks:** Scoring axes without evidence.  
+**Next skill:** site-signal
+
+## Cue — P-fit
+**When:** Page type may fight the SERP job.  
+**Inputs:** URL + query cluster (user-supplied).  
+**Prompt:**
+> Run page-fit: classify target type vs expected SERP shapes; gap scores; top PROBE fixes. Do not invent rank positions.
+**Output:** Fit gaps + handoffs.  
+**Risks:** Guessing SERP without export or stated assumptions.  
+**Next skill:** site-signal
+
+## Cue — A-snap
+**When:** Paid account review without changing spend.  
+**Inputs:** Exports / UI notes.  
+**Prompt:**
+> Paid-cast audit observe-only: claim + evidence + confidence per finding; unit-econ gaps listed as assumptions; no platform mutations.
+**Output:** Snapshot + advise list.  
+**Risks:** Invented ROAS/benchmarks.  
+**Next skill:** paid-cast
+
+## Cue — A-latch
+**When:** User wants a draft change pack.  
+**Inputs:** Scope + ceilings.  
+**Prompt:**
+> Open MutationLatch checklist only: scope, ceilings, idempotency, rollback, mark DRAFT — NOT APPLIED until user says approve on the exact pack.
+**Output:** MEDIA_LATCH fields + change pack.  
+**Risks:** Claiming live changes applied.  
+**Next skill:** paid-cast

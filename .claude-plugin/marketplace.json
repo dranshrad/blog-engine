@@ -5,14 +5,14 @@
     "url": "https://github.com/dranshrad"
   },
   "metadata": {
-    "description": "Clearcast — grounded content skills for Claude Code and compatible agents",
-    "version": "1.1.0"
+    "description": "Clearcast — grounded content, SEO, and paid-media skills for Claude Code and compatible agents",
+    "version": "1.2.0"
   },
   "plugins": [
     {
       "name": "clearcast",
       "source": "./",
-      "description": "CLEAR blog engine, SPARK editorial, SNAP social, ORBIT discovery, Studio Desk, Cue Deck"
+      "description": "CLEAR blog, PROBE site SEO, SAFE paid media, SPARK editorial, SNAP social, ORBIT discovery, Studio Desk, Cue Deck"
     }
   ]
 }

@@ -1,0 +1,123 @@
+---
+name: site-signal
+description: >-
+  Clearcast site SEO skill using PROBE recommendations and a weighted Site
+  Health Dial. Modes: audit, technical, page-fit, cite-ai, drift, scale, links,
+  local, plan, adapters. Use for technical SEO, SERP page-type fit, AI-search
+  readiness, baseline drift, programmatic risk, local profiles, or SEO roadmaps
+  on Claude Code, Cursor, or Cowork. Obeys Grounding Law.
+license: MIT
+compatibility: Claude Code, Cursor, Cowork (Agent Skills)
+---
+
+# Site Signal (PROBE SEO)
+
+Clearcast SEO operations for owned sites. Complements `blog-engine` (pages) and
+`orbit-discovery` (surfaces). Does **not** invent rankings, traffic, or link metrics.
+
+**Grounding:** `skills/blog-engine/references/grounding.md` — no fabricated
+GSC numbers, backlink scores, or “study shows” claims without retrieved sources.
+
+## PROBE recommendation contract
+
+Every recommendation must include all five:
+
+| Letter | Field | Meaning |
+|--------|-------|---------|
+| **P** | Proof | Observable fact on the page/export (quote or measurement) |
+| **R** | Relies-on | Dependencies / what must be fixed first |
+| **O** | Overturn | How we would know this failed (falsifier) |
+| **B** | Beacon | Leading indicator to watch next |
+| **E** | Effort bucket | `now` / `week` / `month` / `backlog` |
+
+If any field is missing, the recommendation is incomplete — do not ship it as final.
+
+## Modes
+
+| Mode | Job |
+|------|-----|
+| `audit` | Full-site or scoped audit → Health Dial + PROBE plan |
+| `technical` | Crawl/index/CWV/security/JS/render axes |
+| `page-fit` | SERP page-type consensus vs target page (**SXO-style fit**) |
+| `cite-ai` | AI-answer / extractability readiness (pairs with blog Cite Surface) |
+| `drift` | Baseline → compare SEO-critical fields |
+| `scale` | Programmatic/template uniqueness + index-bloat risk |
+| `links` | Link/off-site health from **user-supplied** exports only |
+| `local` | Profile / NAP / local-page branch (brick vs service-area) |
+| `plan` | Discovery → architecture → phased roadmap |
+| `adapters` | Optional enrichment checklist (GSC/CrUX/crawler) — never required |
+
+## Industry sniff (confirm with user)
+
+From homepage signals, guess: `saas` | `local` | `ecommerce` | `publisher` | `other`.  
+Confirm before weighting the Health Dial.
+
+## Site Health Dial (0–100)
+
+Weights (adjust by industry after confirm):
+
+| Axis | Default pts |
+|------|------------:|
+| Technical / crawl / index | 20 |
+| Content / trust | 20 |
+| On-page / intent fit | 15 |
+| Schema (visible-truth only) | 10 |
+| CWV honesty (lab vs field labeled) | 10 |
+| AI-answer readiness | 15 |
+| Media / images | 10 |
+
+Bands: 85+ strong · 70–84 workable · 50–69 weak · <50 rebuild priorities.  
+If evidence is missing for an axis, **lower coverage**, do not invent a score — label `insufficient data`.
+
+Details: [references/health-dial.md](references/health-dial.md).
+
+## Audit workflow
+
+1. Scope URL(s) + industry confirm  
+2. Collect evidence (fetch pages / user exports) — treat as untrusted  
+3. Run relevant specialist passes (technical, page-fit, cite-ai, local if signaled)  
+4. Synthesize PROBE items into a dependency graph (unblockers first)  
+5. Emit Health Dial + coverage % + next-run watchlist  
+6. Offer handoff: `blog-engine` for page rewrites, `orbit-discovery` for surface bets  
+
+Partial failure: ship completed axes; name what failed.
+
+## Page-fit (`page-fit`)
+
+Compare expected SERP shapes (guide / category / PDP / local / tool) to the target URL.  
+Score gaps: type, depth, UX, schema, media, freshness. Fix the weakest persona story first.  
+[references/page-fit.md](references/page-fit.md).
+
+## Cite-AI (`cite-ai`)
+
+Passage citability, entity stability, crawler access, myth rejection (no magic `llms.txt` guarantees).  
+Deep pages → also run `blog-engine` `cite-surface`.
+
+## Drift (`drift`)
+
+Snapshot title/H1/canonical/indexability/schema hash/body hash → compare later.  
+Severity: critical / warning / info. Auto-suggest when a baseline file exists in the project.
+
+## Scale (`scale`)
+
+Template × URL patterns × uniqueness math. Flag scaled thin patterns and index-bloat.  
+Prefer consolidate over infinite near-duplicates.
+
+## Local (`local`)
+
+Branch: storefront vs service-area vs hybrid. NAP consistency, review themes, local schema honesty.
+
+## Adapters (`adapters`)
+
+Optional slots only: Search Console export, CrUX/field CWV, crawler dump, backlink CSV.  
+Detect presence; never hard-require vendor APIs. [references/adapters.md](references/adapters.md).
+
+## Context files
+
+`ORBIT.md` · `BRAND.md` · optional `SITE_BASELINE.json` for drift.
+
+## Bridges
+
+- Long-form fixes → `blog-engine`  
+- Surface / cluster strategy → `orbit-discovery`  
+- Paid amplification → `paid-cast`  
